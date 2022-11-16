@@ -3,7 +3,7 @@
   background-color: getBgColor(dark);
 
   &__container {
-    @extend %container;
+    @extend %desktop-container;
     display: flex;
     align-items: baseline;
     gap: 93px;

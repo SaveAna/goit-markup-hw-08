@@ -2,7 +2,8 @@
 @import './utils/mixins';
 @import './utils/placeholders';
 @import './base/base';
-@import './components/header';
+@import './layouts/container';
+@import './layouts/header';
 @import './components/logo';
 @import './components/site-nav';
 @import './components/contacts';
@@ -13,7 +14,7 @@
 @import './components/team';
 @import './components/social-networks';
 @import './components/clients';
-@import './components/footer';
+@import './layouts/footer';
 @import './components/subscribe-form';
 @import './components/backdrop';
 @import './components/modal';
