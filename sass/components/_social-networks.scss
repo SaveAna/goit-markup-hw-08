@@ -1,0 +1,37 @@
+.social-networks {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  &--centered {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+  }
+
+  &__link:focus-visible {
+    outline: none;
+  }
+}
+
+.team__social-networks {
+  @extend %icon-active;
+  color: getColor(basic-icon);
+  fill: currentColor;
+  @include dual-transition(color, background-color);
+}
+
+.footer__social-networks {
+  @extend %icon-active;
+  fill: getColor(primary-white);
+  background-color: getBgColor(foot-icon);
+  @include base-transition(background-color);
+}

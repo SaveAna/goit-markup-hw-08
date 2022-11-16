@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <a class="logo logo--prepend" href="./index.html"
+          ><span class="logo__accent">Web</span>Studio</a
+        >
+        <nav>
+          <ul class="site-nav">
+            <li>
+              <a class="header__link site-nav__item header__link--expanded" href="./index.html"
+                >Studio
+              </a>
+            </li>
+            <li>
+              <a
+                class="header__link site-nav__item header__link--expanded site-nav__item--current"
+                href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a class="header__link site-nav__item header__link--expanded" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts contacts--append">
+          <li>
+            <a
+              class="header__link contacts__item header__link--expanded"
+              href="mailto:info@devstudio.com"
+            >
+              <svg width="16" height="12">
+                <use href="./images/icons.svg#envelope"></use>
+              </svg>
+              <span>info@devstudio.com</span>
+            </a>
+          </li>
+          <li>
+            <a class="header__link contacts__item header__link--expanded" href="tel:12127724150">
+              <svg width="10" height="16">
+                <use href="./images/icons.svg#smartphone"></use>
+              </svg>
+              <span>+1 212-772-4150</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="section-title section-title--hidden">Our projects</h1>
+          <ul class="filter">
+            <li><button class="filter__button" type="button">All</button></li>
+            <li><button class="filter__button" type="button">Web-sites</button></li>
+            <li><button class="filter__button" type="button">Apps</button></li>
+            <li><button class="filter__button" type="button">Design</button></li>
+            <li><button class="filter__button" type="button">Marketing</button></li>
+          </ul>
+          <ul class="portfolio-grid">
+            <li class="portfolio-card">
+              <a class="portfolio-card__link" href="#">
+                <div class="portfolio-card__image">
+                  <img src="./images/portfolio-1.jpg" alt="project exaple" width="370" />
+                  <div class="portfolio-card__overlay">
+                    <p class="portfolio-card__overlay-txt">
+                      Technoduck is a state-of-the-art coronavirus distribution platform. Companies
+                      use this platform for digital espionage and attacks on competitors' secure
+                      servers.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-card__description">
+                  <h2 class="portfolio-card__title">Technoduck</h2>
+                  <p class="portfolio-card__subtitle">Web-site</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a class="portfolio-card__link" href="#">
+                <div class="portfolio-card__image">
+                  <img src="./images/portfolio-2.jpg" alt="project exaple" width="370" />
+                  <div class="portfolio-card__overlay">
+                    <p class="portfolio-card__overlay-txt">
+                      Poster New Orlean vs Golden Star is a state-of-the-art coronavirus
+                      distribution platform. Companies use this platform for digital espionage and
+                      attacks on competitors' secure servers.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-card__description">
+                  <h2 class="portfolio-card__title">Poster New Orlean vs Golden Star</h2>
+                  <p class="portfolio-card__subtitle">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a class="portfolio-card__link" href="#">
+                <div class="portfolio-card__image">
+                  <img src="./images/portfolio-3.jpg" alt="project exaple" width="370" />
+                  <div class="portfolio-card__overlay">
+                    <p class="portfolio-card__overlay-txt">
+                      Seafood Restaurant is a state-of-the-art coronavirus distribution platform.
+                      Companies use this platform for digital espionage and attacks on competitors'
+                      secure servers.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-card__description">
+                  <h2 class="portfolio-card__title">Seafood Restaurant</h2>
+                  <p class="portfolio-card__subtitle">Apps</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a class="portfolio-card__link" href="#">
+                <div class="portfolio-card__image">
+                  <img src="./images/portfolio-4.jpg" alt="project exaple" width="370" />
+                  <div class="portfolio-card__overlay">
+                    <p class="portfolio-card__overlay-txt">
+                      Project Prime is a state-of-the-art coronavirus distribution platform.
+                      Companies use this platform for digital espionage and attacks on competitors'
+                      secure servers.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-card__description">
+                  <h2 class="portfolio-card__title">Project Prime</h2>
+                  <p class="portfolio-card__subtitle">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a class="portfolio-card__link" href="#">
+                <div class="portfolio-card__image">
+                  <img src="./images/portfolio-5.jpg" alt="project exaple" width="370" />
+                  <div class="portfolio-card__overlay">
+                    <p class="portfolio-card__overlay-txt">
+                      Project Boxes is a state-of-the-art coronavirus distribution platform.
+                      Companies use this platform for digital espionage and attacks on competitors'
+                      secure servers.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-card__description">
+                  <h2 class="portfolio-card__title">Project Boxes</h2>
+                  <p class="portfolio-card__subtitle">Apps</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a class="portfolio-card__link" href="#">
+                <div class="portfolio-card__image">
+                  <img src="./images/portfolio-6.jpg" alt="project exaple" width="370" />
+                  <div class="portfolio-card__overlay">
+                    <p class="portfolio-card__overlay-txt">
+                      Inspiration has no Borders is a state-of-the-art coronavirus distribution
+                      platform. Companies use this platform for digital espionage and attacks on
+                      competitors' secure servers.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-card__description">
+                  <h2 class="portfolio-card__title">Inspiration has no Borders</h2>
+                  <p class="portfolio-card__subtitle">Web-site</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a class="portfolio-card__link" href="#">
+                <div class="portfolio-card__image">
+                  <img src="./images/portfolio-7.jpg" alt="project exaple" width="370" />
+                  <div class="portfolio-card__overlay">
+                    <p class="portfolio-card__overlay-txt">
+                      Limited Edition is a state-of-the-art coronavirus distribution platform.
+                      Companies use this platform for digital espionage and attacks on competitors'
+                      secure servers.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-card__description">
+                  <h2 class="portfolio-card__title">Limited Edition</h2>
+                  <p class="portfolio-card__subtitle">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a class="portfolio-card__link" href="#">
+                <div class="portfolio-card__image">
+                  <img src="./images/portfolio-8.jpg" alt="project exaple" width="370" />
+                  <div class="portfolio-card__overlay">
+                    <p class="portfolio-card__overlay-txt">
+                      Project LAB is a state-of-the-art coronavirus distribution platform. Companies
+                      use this platform for digital espionage and attacks on competitors' secure
+                      servers.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-card__description">
+                  <h2 class="portfolio-card__title">Project LAB</h2>
+                  <p class="portfolio-card__subtitle">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a class="portfolio-card__link" href="#">
+                <div class="portfolio-card__image">
+                  <img src="./images/portfolio-9.jpg" alt="project exaple" width="370" />
+                  <div class="portfolio-card__overlay">
+                    <p class="portfolio-card__overlay-txt">
+                      Growing Business is a state-of-the-art coronavirus distribution platform.
+                      Companies use this platform for digital espionage and attacks on competitors'
+                      secure servers.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-card__description">
+                  <h2 class="portfolio-card__title">Growing Business</h2>
+                  <p class="portfolio-card__subtitle">Apps</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div>
+          <a class="logo footer__logo logo--separated" href="./index.html"
+            ><span class="logo__accent">Web</span>Studio</a
+          >
+          <address>
+            <ul class="address">
+              <li class="address__item">
+                <a
+                  class="address__link address__link--colored"
+                  href="https://goo.gl/maps/ZH1uKgPYbjn2wYfD8"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >695 Park Ave, NY 10065, USA</a
+                >
+              </li>
+              <li class="address__item">
+                <a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="address__item">
+                <a class="address__link" href="tel:12127724150">+1 212-772-4150</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div>
+          <p class="footer__label">Find us on</p>
+          <ul class="social-networks">
+            <li>
+              <a
+                class="social-networks__link footer__social-networks"
+                href="#"
+                aria-label="instagram"
+              >
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social-networks__link footer__social-networks"
+                href="#"
+                aria-label="twitter"
+              >
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social-networks__link footer__social-networks"
+                href="#"
+                aria-label="facebook"
+              >
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social-networks__link footer__social-networks"
+                href="#"
+                aria-label="linkedin"
+              >
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form class="subscribe-form js-speaker">
+          <div>
+            <label for="subscribe-email" class="subscribe-form__label"
+              >Subscribe to the newsletter</label
+            >
+            <input
+              type="email"
+              class="subscribe-form__input"
+              name="subscribe-email"
+              id="subscribe-email"
+              placeholder="E-mail"
+              minlength="4"
+            />
+          </div>
+          <button class="button subscribe-form__button" type="submit">
+            Subscribe
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>

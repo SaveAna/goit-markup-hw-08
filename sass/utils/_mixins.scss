@@ -1,0 +1,18 @@
+@mixin vertical-padding($top: 94px, $bottom: 94px) {
+  padding-top: $top;
+  padding-bottom: $bottom;
+}
+
+@mixin base-transition($property) {
+  transition: $property getAnim(time) getAnim(func);
+}
+
+@mixin dual-transition($a-property, $b-property) {
+  transition: $a-property getAnim(time) getAnim(func), $b-property getAnim(time) getAnim(func);
+}
+
+// crash of my genious idea xD
+@mixin triple-transition($a-property, $b-property, $c-property) {
+  transition: $a-property getAnim(time) getAnim(func), $b-property getAnim(time) getAnim(func),
+    $c-property getAnim(time) getAnim(func);
+}

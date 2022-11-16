@@ -1,0 +1,78 @@
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: getSize(grid-gap);
+}
+
+.portfolio-card {
+  flex-basis: calc((100% - 2 * getSize(grid-gap)) / 3);
+  background-color: getColor(primary-white);
+  @include base-transition(box-shadow);
+
+  &__link {
+    display: block;
+    @include base-transition(box-shadow);
+  }
+
+  &__link:focus-visible {
+    outline: none;
+  }
+
+  &__image {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: getBgColor(card-overlay);
+
+    transform: translateY(0);
+    @include base-transition(transform);
+  }
+
+  &__overlay-txt {
+    position: absolute;
+
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: getColor(primary-white);
+
+    max-width: 322px;
+    left: 25px;
+    top: 63px;
+  }
+
+  &__description {
+    padding: 20px 24px;
+    border: 1px solid getBorderColor(portfolio);
+    border-top: none;
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: getColor(basic);
+  }
+
+  &:hover &__overlay,
+  &__link:focus &__overlay {
+    transform: translateY(-100%);
+  }
+
+  &:hover,
+  &__link:focus {
+    box-shadow: getShadow(portfolio);
+  }
+}

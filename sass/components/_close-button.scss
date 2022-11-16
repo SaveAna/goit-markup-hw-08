@@ -1,0 +1,19 @@
+.close-button {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 8px;
+
+  fill: getColor(primary-black);
+  background: getColor(primary-white);
+  border: 1px solid getBorderColor(form);
+  border-radius: 50%;
+
+  @include base-transition(fill);
+
+  &:hover,
+  &:focus {
+    fill: getColor(accent);
+  }
+}

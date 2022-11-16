@@ -1,0 +1,31 @@
+.button {
+  @extend %btn-active;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  letter-spacing: 0.06em;
+  color: getColor(primary-white);
+  border-color: transparent;
+
+  width: getSize(btn-width);
+  height: getSize(btn-height);
+
+  background: getColor(accent);
+  box-shadow: getShadow(button);
+  border-radius: 4px;
+
+  &--centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.subscribe-form__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  fill: getColor(primary-white);
+}

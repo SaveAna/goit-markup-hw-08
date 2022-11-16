@@ -1,0 +1,118 @@
+// ========== color palette ==========
+
+$colors: (
+  'accent': #2196f3,
+  'primary-white': #ffffff,
+  'primary-black': #212121,
+
+  'basic': #757575,
+  'foot-contacts': #ffffff99,
+  'placeholder': #75757580,
+  'basic-icon': #afb1b8,
+);
+
+@function getColor($var) {
+  @return map-get($colors, $var);
+}
+
+$bg-colors: (
+  'dark': #2f303a,
+  'light': #f5f4fa,
+  'active-btn': #188ce8,
+  'hero': #c4c4c4,
+  'hero-overlay': #2f303a66,
+  'work-label': #2f303acc,
+  'foot-icon': #ffffff1a,
+  'backdrop': #00000033,
+  'card-overlay': #2196f3e5,
+);
+
+@function getBgColor($var) {
+  @return map-get($bg-colors, $var);
+}
+
+$border-colors: (
+  'header': #ececec,
+  'portfolio': #eeeeee,
+  'form': #21212133,
+  'subscription': #ffffff4d,
+);
+
+@function getBorderColor($var) {
+  @return map-get($border-colors, $var);
+}
+
+$shadows: (
+  'button': (
+    0px 4px 4px rgba(0, 0, 0, 0.15),
+  ),
+  'modal': (
+    0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2),
+  ),
+  'team-card': (
+    0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2),
+  ),
+  'subscription': (
+    0px 4px 4px rgba(0, 0, 0, 0.15),
+  ),
+  'filter-btn': (
+    0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12),
+  ),
+  'portfolio': (
+    0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16),
+  ),
+);
+
+@function getShadow($var) {
+  @return map-get($shadows, $var);
+}
+
+// ========== fonts ==========
+
+$fonts: (
+  'main': (
+    'Roboto',
+    sans-serif,
+  ),
+  'secondary': (
+    'Raleway',
+    sans-serif,
+  ),
+);
+
+@function getFont($var) {
+  @return map-get($fonts, $var);
+}
+
+// ========== repetitive/main values ==========
+
+$transition: (
+  'time': 250ms,
+  'func': cubic-bezier(0.4, 0, 0.2, 1),
+);
+
+@function getAnim($var) {
+  @return map-get($transition, $var);
+}
+
+$sizes: (
+  'hero-width': 1600px,
+  'contain-width': 1200px,
+  'contain-padding': 15px,
+  'section-padding': 94px,
+  'btn-width': 200px,
+  'btn-height': 50px,
+  'grid-gap': 30px,
+);
+
+@function getSize($var) {
+  @return map-get($sizes, $var);
+} ;
