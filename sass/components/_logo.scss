@@ -21,3 +21,15 @@
 // .footer__logo {
 //   color: getColor(primary-white);
 // }
+
+.logo {
+  font-family: getFont(secondary);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+
+  &__accent {
+    @extend %accent;
+  }
+}
