@@ -17,4 +17,22 @@
 // }
 
 .contacts {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: getColor(basic);
+
+  &__item:first-child {
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  &__link--colored {
+    color: getColor(accent);
+  }
+
+  // font-size: 24px;
+  // line-height: 28px;
+  &--separated {
+    margin-bottom: 64px;
+  }
 }
