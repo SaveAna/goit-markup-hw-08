@@ -17,3 +17,11 @@
 //     @include vertical-padding(32px, 32px);
 //   }
 // }
+
+.header {
+  border-bottom: 1px solid getBorderColor(header);
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+}
