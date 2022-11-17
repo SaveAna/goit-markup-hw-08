@@ -22,11 +22,55 @@
         <a class="logo logo--prepend" href="./index.html"
           ><span class="logo__accent">Web</span>Studio</a
         >
-        <button class="nav-button nav-button--append" type="button">
+        <button data-modal-open class="nav-button nav-button--append" type="button">
           <svg width="40" height="40">
             <use href="./images/icons.svg#burger"></use>
           </svg>
         </button>
+        <!-- ========== nav-menu ========== -->
+        <div data-modal class="backdrop backdrop--hidden">
+          <div class="modal container">
+            <button data-modal-close class="close-button header__close-button" type="button">
+              <svg width="18.67" height="18.67">
+                <use href="./images/icons.svg#close"></use>
+              </svg>
+            </button>
+            <nav>
+              <ul class="site-nav">
+                <li>
+                  <a class="header__link site-nav__item site-nav__item--current" href="./index.html"
+                    >Studio
+                  </a>
+                </li>
+                <li>
+                  <a class="header__link site-nav__item" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                  <a class="header__link site-nav__item" href="#">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="contacts contacts--append">
+              <li>
+                <a class="header__link contacts__item" href="tel:12127724150">
+                  <span>+1 212-772-4150</span>
+                </a>
+              </li>
+              <li>
+                <a class="header__link contacts__item" href="mailto:info@devstudio.com">
+                  <span>info@devstudio.com</span>
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li>Instagram</li>
+              <li>Twitter</li>
+              <li>Facebook</li>
+              <li>LinkedIn</li>
+            </ul>
+          </div>
+        </div>
+
         <!-- <nav>
           <ul class="site-nav">
             <li>

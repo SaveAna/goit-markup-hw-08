@@ -17,3 +17,26 @@
 //     fill: getColor(accent);
 //   }
 // }
+
+.close-button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: getColor(primary-black);
+  background-color: getColor(primary-white);
+  border: none;
+  @include base-transition(fill);
+
+  &:hover,
+  &:focus {
+    fill: getColor(accent);
+  }
+}
+
+.header__close-button {
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  right: 15px;
+}
