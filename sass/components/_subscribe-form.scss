@@ -1,55 +1,55 @@
-.subscribe-form {
-  display: flex;
-  align-items: flex-end;
-  gap: 12px;
+// .subscribe-form {
+//   display: flex;
+//   align-items: flex-end;
+//   gap: 12px;
 
-  &__label {
-    display: block;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: getColor(primary-white);
+//   &__label {
+//     display: block;
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     color: getColor(primary-white);
 
-    margin-bottom: 20px;
-  }
+//     margin-bottom: 20px;
+//   }
 
-  &__input {
-    display: block;
+//   &__input {
+//     display: block;
 
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: getColor(primary-white);
+//     font-size: 16px;
+//     line-height: 1.25;
+//     letter-spacing: 0.03em;
+//     color: getColor(primary-white);
 
-    width: 358px;
-    height: 50px;
-    margin: 0;
-    padding: 15px 16px;
-    cursor: pointer;
+//     width: 358px;
+//     height: 50px;
+//     margin: 0;
+//     padding: 15px 16px;
+//     cursor: pointer;
 
-    border: 1px solid getBorderColor(subscription);
-    filter: drop-shadow(getShadow(subscription));
-    border-radius: 4px;
-    background-color: transparent;
+//     border: 1px solid getBorderColor(subscription);
+//     filter: drop-shadow(getShadow(subscription));
+//     border-radius: 4px;
+//     background-color: transparent;
 
-    @include base-transition(border-color);
-  }
+//     @include base-transition(border-color);
+//   }
 
-  &__input::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: getColor(foot-contacts);
-  }
+//   &__input::placeholder {
+//     font-size: 16px;
+//     line-height: 1.25;
+//     letter-spacing: 0.03em;
+//     color: getColor(foot-contacts);
+//   }
 
-  &__input:hover,
-  &__input:focus {
-    border-color: getColor(accent);
-  }
+//   &__input:hover,
+//   &__input:focus {
+//     border-color: getColor(accent);
+//   }
 
-  &__input:focus-visible {
-    outline: none;
-  }
-}
+//   &__input:focus-visible {
+//     outline: none;
+//   }
+// }

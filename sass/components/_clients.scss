@@ -1,36 +1,36 @@
-.clients {
-  @include vertical-padding();
+// .clients {
+//   @include vertical-padding();
 
-  &__set {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: getSize(grid-gap);
-  }
+//   &__set {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     gap: getSize(grid-gap);
+//   }
 
-  &__card {
-    flex-basis: calc(100% - 5 * getSize(grid-gap) / 6);
-  }
+//   &__card {
+//     flex-basis: calc(100% - 5 * getSize(grid-gap) / 6);
+//   }
 
-  &__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 92px;
-    color: getColor(basic-icon);
-    border: 1px solid getColor(basic-icon);
-    border-radius: 4px;
-    fill: currentColor;
+//   &__link {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     height: 92px;
+//     color: getColor(basic-icon);
+//     border: 1px solid getColor(basic-icon);
+//     border-radius: 4px;
+//     fill: currentColor;
 
-    @include dual-transition(color, border-color);
-  }
+//     @include dual-transition(color, border-color);
+//   }
 
-  &__link:hover,
-  &__link:focus {
-    color: getColor(accent);
-    border-color: getColor(accent);
-  }
-  &__link:focus-visible {
-    outline: none;
-  }
-}
+//   &__link:hover,
+//   &__link:focus {
+//     color: getColor(accent);
+//     border-color: getColor(accent);
+//   }
+//   &__link:focus-visible {
+//     outline: none;
+//   }
+// }

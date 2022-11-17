@@ -1,29 +1,27 @@
-.hero {
-    @include vertical-padding (200px, 200px);
-    text-align: center;
-    color: getColor(primary-white);
-    max-width: getSize(hero-width);
-    margin-left: auto;
-    margin-right: auto;
+// .hero {
+//     @include vertical-padding (200px, 200px);
+//     text-align: center;
+//     color: getColor(primary-white);
+//     max-width: getSize(hero-width);
+//     margin-left: auto;
+//     margin-right: auto;
 
-    background-image: linear-gradient(to right, getBgColor(hero-overlay), getBgColor(hero-overlay)),
-    url('../images/bg-img.jpg');
-    background-color: getBgColor(hero);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+//     background-image: linear-gradient(to right, getBgColor(hero-overlay), getBgColor(hero-overlay)),
+//     url('../images/bg-img.jpg');
+//     background-color: getBgColor(hero);
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
 
-    &__title {
-        font-weight: 900;
-      font-size: 44px;
-      line-height: 1.36;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      max-width: 696px;
-      margin-right: auto;
-      margin-left: auto;
-      margin-bottom: 30px;
-    }
-    }
-
-
+//     &__title {
+//         font-weight: 900;
+//       font-size: 44px;
+//       line-height: 1.36;
+//       letter-spacing: 0.06em;
+//       text-transform: uppercase;
+//       max-width: 696px;
+//       margin-right: auto;
+//       margin-left: auto;
+//       margin-bottom: 30px;
+//     }
+//     }

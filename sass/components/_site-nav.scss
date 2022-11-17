@@ -1,21 +1,21 @@
-.site-nav {
-  display: flex;
-  gap: 50px;
+// .site-nav {
+//   display: flex;
+//   gap: 50px;
 
-  &__item {
-    &--current {
-      position: relative;
-      color: getColor(accent);
-    }
-    &--current::after {
-      content: '';
-      position: absolute;
-      display: block;
-      bottom: -1px;
-      width: 100%;
-      height: 4px;
-      background-color: getColor(accent);
-      border-radius: 2px;
-    }
-  }
-}
+//   &__item {
+//     &--current {
+//       position: relative;
+//       color: getColor(accent);
+//     }
+//     &--current::after {
+//       content: '';
+//       position: absolute;
+//       display: block;
+//       bottom: -1px;
+//       width: 100%;
+//       height: 4px;
+//       background-color: getColor(accent);
+//       border-radius: 2px;
+//     }
+//   }
+// }

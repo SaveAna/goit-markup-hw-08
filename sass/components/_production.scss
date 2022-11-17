@@ -1,31 +1,31 @@
-.production {
-  @include vertical-padding(0);
+// .production {
+//   @include vertical-padding(0);
 
-  &__set {
-    display: flex;
-    gap: getSize(grid-gap);
-  }
+//   &__set {
+//     display: flex;
+//     gap: getSize(grid-gap);
+//   }
 
-  &__item {
-    position: relative;
-    flex-basis: calc((100% - 2 * getSize(grid-gap)) / 3);
-  }
+//   &__item {
+//     position: relative;
+//     flex-basis: calc((100% - 2 * getSize(grid-gap)) / 3);
+//   }
 
-  &__label {
-    position: absolute;
-    bottom: 0;
+//   &__label {
+//     position: absolute;
+//     bottom: 0;
 
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: getColor(primary-white);
-    background-color: getBgColor(work-label);
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     color: getColor(primary-white);
+//     background-color: getBgColor(work-label);
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 70px;
-  }
-}
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 100%;
+//     height: 70px;
+//   }
+// }

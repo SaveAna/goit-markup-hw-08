@@ -1,37 +1,37 @@
-.team {
-  @include vertical-padding();
-  background-color: getBgColor(light);
+// .team {
+//   @include vertical-padding();
+//   background-color: getBgColor(light);
 
-  &__set {
-    display: flex;
-    gap: getSize(grid-gap);
-  }
-}
+//   &__set {
+//     display: flex;
+//     gap: getSize(grid-gap);
+//   }
+// }
 
-.teammate {
-  text-align: center;
-  background-color: getColor(primary-white);
-  box-shadow: getShadow(team-card);
-  border-radius: 0px 0px 4px 4px;
-  flex-basis: calc((100% - 3 * getSize(grid-gap)) / 4);
+// .teammate {
+//   text-align: center;
+//   background-color: getColor(primary-white);
+//   box-shadow: getShadow(team-card);
+//   border-radius: 0px 0px 4px 4px;
+//   flex-basis: calc((100% - 3 * getSize(grid-gap)) / 4);
 
-  &__name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    margin-bottom: 10px;
-  }
+//   &__name {
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 1.19;
+//     letter-spacing: 0.03em;
+//     margin-bottom: 10px;
+//   }
 
-  &__position {
-    font-size: 16px;
-    line-height: 1.19;
-    color: getColor(basic);
-    letter-spacing: 0.03em;
-    margin-bottom: 16px;
-  }
+//   &__position {
+//     font-size: 16px;
+//     line-height: 1.19;
+//     color: getColor(basic);
+//     letter-spacing: 0.03em;
+//     margin-bottom: 16px;
+//   }
 
-  &__info {
-    @include vertical-padding(30px, 30px);
-  }
-}
+//   &__info {
+//     @include vertical-padding(30px, 30px);
+//   }
+// }

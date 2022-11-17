@@ -1,23 +1,23 @@
-.logo {
-  font-family: getFont(secondary);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
+// .logo {
+//   font-family: getFont(secondary);
+//   font-weight: 700;
+//   font-size: 26px;
+//   line-height: 1.2;
+//   letter-spacing: 0.03em;
 
-  &--prepend {
-    margin-right: 93px;
-  }
+//   &--prepend {
+//     margin-right: 93px;
+//   }
 
-  &--separated {
-    margin-bottom: 20px;
-  }
+//   &--separated {
+//     margin-bottom: 20px;
+//   }
 
-  &__accent {
-    @extend %accent;
-  }
-}
+//   &__accent {
+//     @extend %accent;
+//   }
+// }
 
-.footer__logo {
-  color: getColor(primary-white);
-}
+// .footer__logo {
+//   color: getColor(primary-white);
+// }

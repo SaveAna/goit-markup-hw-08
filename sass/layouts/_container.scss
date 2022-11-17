@@ -1,3 +1,13 @@
+// .container {
+//   width: getSize(contain-width);
+// padding-left: getSize(contain-padding);
+// padding-right: getSize(contain-padding);
+
+// margin: 0 auto;
+// }
+
 .container {
-  @extend %desktop-container;
+  padding-left: getSize(contain-padding);
+  padding-right: getSize(contain-padding);
+  margin: 0 auto;
 }
