@@ -30,7 +30,6 @@
   visibility: visible;
   width: 100%;
   height: 100%;
-  background-color: getColor(primary-white);
   opacity: 1;
   z-index: 1;
 
@@ -39,4 +38,8 @@
     opacity: 0;
     pointer-events: none;
   }
+}
+
+.header__backdrop {
+  background-color: getColor(primary-white);
 }
