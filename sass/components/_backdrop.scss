@@ -35,13 +35,19 @@
   background-color: getBgColor(backdrop);
   overflow-y: scroll;
 
+  @include dual-transition(opacity, visibility);
+
   &--hidden {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
+
+    @include dual-transition(opacity, visibility);
   }
 }
 
-// .header__backdrop {
-//   background-color: getColor(primary-white);
-// }
+.backdrop--hidden .modal {
+  right: -100%;
+  top: -100%;
+  transform: scale(0);
+}

@@ -2,17 +2,14 @@
   display: flex;
   gap: 20px;
 
-  // &--append {
-  //   margin-top: auto;
-  // }
   &__item {
     position: relative;
+    @extend %accent;
   }
 
   &__link {
     font-size: 18px;
     line-height: 1.22;
-    color: getColor(accent);
   }
 
   &__item:not(:first-child)::after {

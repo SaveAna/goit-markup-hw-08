@@ -29,3 +29,8 @@
   transition: $a-property getAnim(time) getAnim(func), $b-property getAnim(time) getAnim(func),
     $c-property getAnim(time) getAnim(func);
 }
+
+@mixin burger($a-property, $b-property, $c-property) {
+  transition: $a-property 350ms getAnim(func), $b-property 350ms getAnim(func),
+    $c-property 300ms getAnim(func);
+}

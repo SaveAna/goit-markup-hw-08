@@ -25,6 +25,10 @@
   line-height: 1.18;
   letter-spacing: 0.02em;
 
+  &__item {
+    @extend %link-active;
+  }
+
   &__item:not(:last-child) {
     margin-bottom: 32px;
   }

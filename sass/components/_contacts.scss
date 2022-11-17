@@ -27,14 +27,16 @@
   &__item:first-child {
     font-size: 34px;
     line-height: 40px;
+    margin-bottom: 32px;
+    @extend %accent;
   }
 
-  &__link--colored {
-    color: getColor(accent);
+  &__item:last-child {
+    font-size: 24px;
+    line-height: 28px;
+    color: getColor(form);
   }
 
-  // font-size: 24px;
-  // line-height: 28px;
   &--separated {
     margin-bottom: 64px;
   }
