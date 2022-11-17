@@ -45,9 +45,14 @@
     @include dual-transition(opacity, visibility);
   }
 }
-
-.backdrop--hidden .modal {
+.backdrop--hidden .menu {
   right: -100%;
   top: -100%;
   transform: scale(0);
 }
+
+// .backdrop--hidden .menu {
+//   right: -100%;
+//   top: -100%;
+//   transform: scale(0);
+// }
