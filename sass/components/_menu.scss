@@ -7,8 +7,5 @@
   right: 0;
   top: 0;
   transform: scale(1);
-  // @include base-transition(right);
-  // @include dual-transition(right, top);
   @include burger(right, top, transform);
-  // transform: translateX(-100%);
 }

@@ -1,26 +1,26 @@
-// .checkbox {
-//   appearance: none;
-//   position: absolute;
+.checkbox {
+  appearance: none;
+  position: absolute;
 
-//   &__icon {
-//     fill: getColor(primary-white);
-//     background-color: transparent;
-//     border: 2px solid getColor(primary-black);
-//     border-radius: 2px;
-//     @include dual-transition(border-color, background-color);
-//   }
+  &__icon {
+    fill: getColor(primary-white);
+    background-color: transparent;
+    border: 2px solid getColor(primary-black);
+    border-radius: 2px;
+    @include dual-transition(border-color, background-color);
+  }
 
-//   &:focus-visible {
-//     outline: none;
-//   }
-// }
+  &:focus-visible {
+    outline: none;
+  }
+}
 
-// .checkbox:focus + .checkbox__icon {
-//   outline: 2px solid getColor(primary-black);
-//   outline-offset: 2px;
-// }
-// .checkbox:checked + .checkbox__icon {
-//   background-color: getColor(accent);
-//   border-color: transparent;
-//   background-origin: content-box;
-// }
+.checkbox:focus + .checkbox__icon {
+  outline: 2px solid getColor(primary-black);
+  outline-offset: 2px;
+}
+.checkbox:checked + .checkbox__icon {
+  background-color: getColor(accent);
+  border-color: transparent;
+  background-origin: content-box;
+}

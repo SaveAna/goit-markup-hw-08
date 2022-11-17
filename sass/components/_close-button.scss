@@ -1,31 +1,15 @@
-// .close-button {
-//   position: absolute;
-//   width: 30px;
-//   height: 30px;
-//   top: 8px;
-//   right: 8px;
-
-//   fill: getColor(primary-black);
-//   background: getColor(primary-white);
-//   border: 1px solid getBorderColor(form);
-//   border-radius: 50%;
-
-//   @include base-transition(fill);
-
-//   &:hover,
-//   &:focus {
-//     fill: getColor(accent);
-//   }
-// }
-
 .close-button {
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 8px;
+
   fill: getColor(primary-black);
-  background-color: getColor(primary-white);
-  border: none;
+  background: getColor(primary-white);
+  border: 1px solid getBorderColor(form);
+  border-radius: 50%;
+
   @include base-transition(fill);
 
   &:hover,
@@ -34,9 +18,16 @@
   }
 }
 
-.header__close-button {
+.menu__close-button {
   width: 40px;
   height: 40px;
   top: 10px;
   right: 15px;
+
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
 }
