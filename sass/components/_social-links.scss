@@ -1,7 +1,25 @@
 .social-links {
   display: flex;
-  font-size: 18px;
-  line-height: 1.22;
-  color: getColor(accent);
   gap: 20px;
+
+  &__item {
+    position: relative;
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 1.22;
+    color: getColor(accent);
+  }
+
+  &__item:not(:first-child)::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 22px;
+    left: 0;
+    top: 0;
+    background-color: getBorderColor(form);
+    transform: translateX(-10px);
+  }
 }

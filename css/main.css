@@ -106,10 +106,26 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 20px;
+}
+.social-links__item {
+  position: relative;
+}
+.social-links__link {
   font-size: 18px;
   line-height: 1.22;
   color: #2196f3;
-  gap: 20px;
+}
+.social-links__item:not(:first-child)::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 22px;
+  left: 0;
+  top: 0;
+  background-color: rgba(33, 33, 33, 0.2);
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
 }
 
 .backdrop {
@@ -121,6 +137,7 @@ button {
   height: 100%;
   opacity: 1;
   z-index: 1;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .backdrop--hidden {
   visibility: hidden;
@@ -128,8 +145,11 @@ button {
   pointer-events: none;
 }
 
-.header__backdrop {
+.modal {
+  height: 100%;
+  width: 100%;
   background-color: #ffffff;
+  padding: 48px 40px 48px;
 }
 
 .close-button {
