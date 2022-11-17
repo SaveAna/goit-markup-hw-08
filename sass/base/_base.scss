@@ -4,6 +4,10 @@ body {
   background-color: getColor(primary-white);
 }
 
+.scroll-hidden {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,

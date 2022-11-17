@@ -16,6 +16,10 @@ body {
   background-color: #ffffff;
 }
 
+.scroll-hidden {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -120,6 +124,8 @@ button {
 .contacts {
   font-weight: 500;
   letter-spacing: 0.02em;
+}
+.contacts__item {
   color: #757575;
 }
 .contacts__item:first-child {
@@ -169,6 +175,7 @@ button {
   opacity: 1;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
 }
 .backdrop--hidden {
   visibility: hidden;
@@ -177,7 +184,7 @@ button {
 }
 
 .modal {
-  height: 100%;
+  height: 796px;
   width: 100%;
   background-color: #ffffff;
   padding: 48px 40px 48px;

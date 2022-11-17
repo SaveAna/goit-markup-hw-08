@@ -19,7 +19,10 @@
 .contacts {
   font-weight: 500;
   letter-spacing: 0.02em;
-  color: getColor(basic);
+
+  &__item {
+    color: getColor(basic);
+  }
 
   &__item:first-child {
     font-size: 34px;
