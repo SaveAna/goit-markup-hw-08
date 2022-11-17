@@ -27,18 +27,26 @@
 
 .modal {
   position: absolute;
-  height: 796px;
-  width: 100%;
+  top: 93px;
+  left: 50%;
+  height: 609px;
+  width: 450px;
   background-color: getColor(primary-white);
-  padding: 48px 40px 48px;
-  right: 0;
-  top: 0;
-  transform: scale(1);
-  // @include base-transition(right);
-  // @include dual-transition(right, top);
-  @include burger(right, top, transform);
-  // transform: translateX(-100%);
-}
+  box-shadow: getShadow(modal);
+  border-radius: 4px;
+  padding: 40px;
 
-//     transform: translateY(0);
-//     @include base-transition(transform);
+  transform: translateX(-50%) scale(1);
+  @include base-transition(transform);
+
+  &__title {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: getColor(primary-black);
+    margin-bottom: 12px;
+  }
+}

@@ -18,7 +18,6 @@
   @include respond-to('tablet') {
     width: getSize(tablet-width);
   }
-
   @include respond-to('desktop') {
     width: getSize(desktop-width);
   }

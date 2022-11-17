@@ -41,11 +41,11 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media (min-device-pexel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    & {
-      background-image: url('../images/bg-mobile@2x.jpg');
-    }
-  }
+  // @media (min-device-pexel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //   & {
+  //     background-image: url('../images/bg-mobile@2x.jpg');
+  //   }
+  // }
 
   &__title {
     font-weight: 900;

@@ -41,3 +41,7 @@
 //     @extend %visually-hidden;
 //   }
 // }
+
+.features {
+  @include vertical-padding(60px, 60px);
+}
