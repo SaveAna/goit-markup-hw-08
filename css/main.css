@@ -102,6 +102,21 @@ button {
   line-height: 1.16;
   letter-spacing: 0.03em;
 }
+.site-nav {
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+}
+.site-nav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.site-nav__item--current {
+  color: #2196f3;
+}
+.site-nav--prepend {
+  margin-bottom: 306px;
+}
+
 .social-links {
   display: -webkit-box;
   display: -ms-flexbox;
