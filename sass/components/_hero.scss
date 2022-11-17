@@ -25,3 +25,38 @@
 //       margin-bottom: 30px;
 //     }
 //     }
+
+.hero {
+  width: 480px;
+  height: 400px;
+  text-align: center;
+  color: getColor(primary-white);
+  background-image: linear-gradient(to right, getBgColor(hero-overlay), getBgColor(hero-overlay)),
+    url('../images/bg-mobile.jpg');
+  background-size: 480px 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include vertical-padding(118px, 118px);
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-device-pexel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    & {
+      background-image: url('../images/bg-mobile@2x.jpg');
+    }
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    max-width: 360px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
