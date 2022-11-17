@@ -44,4 +44,44 @@
 
 .features {
   @include vertical-padding(60px, 60px);
+
+  .section-title {
+    &--hidden {
+      @extend %visually-hidden;
+    }
+  }
+
+  &__item {
+    width: 100%;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  &__thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background-color: getBgColor(light);
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  &__subtitle {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: getColor(basic);
+  }
 }
