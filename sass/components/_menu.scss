@@ -1,4 +1,5 @@
 .menu {
+  // display: none;
   position: absolute;
   height: 796px;
   width: 100%;
@@ -8,4 +9,8 @@
   top: 0;
   transform: scale(1);
   @include burger(right, top, transform);
+
+  // &--is-open {
+  // display: block;
+  // }
 }
