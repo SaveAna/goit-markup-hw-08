@@ -190,12 +190,15 @@
   }
 
   &__agreement {
+    letter-spacing: 0.03em;
+    // =====
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 7px;
-    font-size: 14px;
-    line-height: 1.71;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: getColor(basic);
     margin-bottom: 30px;

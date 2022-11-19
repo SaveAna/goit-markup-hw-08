@@ -562,6 +562,7 @@ button {
   color: rgba(117, 117, 117, 0.5019607843);
 }
 .form__agreement {
+  letter-spacing: 0.03em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -572,8 +573,9 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 7px;
-  font-size: 14px;
-  line-height: 1.71;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
   margin-bottom: 30px;
@@ -597,11 +599,6 @@ button {
 }
 .checkbox:focus-visible {
   outline: none;
-}
-
-.checkbox:focus + .checkbox__icon {
-  outline: 2px solid #212121;
-  outline-offset: 2px;
 }
 
 .checkbox:checked + .checkbox__icon {
