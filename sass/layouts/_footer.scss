@@ -40,3 +40,43 @@
 //     color: getColor(primary-white);
 //   }
 // }
+
+.footer {
+  @include vertical-padding(60px, 60px);
+  background-color: getBgColor(dark);
+  text-align: center;
+
+  &__label {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: getColor(primary-white);
+
+    margin-bottom: 20px;
+  }
+}
+
+.address {
+  &--separated {
+    margin-bottom: 50px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  &__link {
+    @extend %link-active;
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    color: getColor(foot-contacts);
+  }
+
+  &__link--colored {
+    color: getColor(primary-white);
+  }
+}

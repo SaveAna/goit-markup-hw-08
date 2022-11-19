@@ -32,4 +32,12 @@
   &__accent {
     @extend %accent;
   }
+
+  &--separated {
+    margin-bottom: 28px;
+  }
+}
+
+.footer__logo {
+  color: getColor(primary-white);
 }

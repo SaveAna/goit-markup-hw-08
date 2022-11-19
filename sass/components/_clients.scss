@@ -36,7 +36,7 @@
 // }
 
 .clients {
-  @include vertical-padding(60px 60px);
+  @include vertical-padding(60px, 60px);
 
   &__set {
     display: flex;
