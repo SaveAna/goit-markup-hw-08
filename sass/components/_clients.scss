@@ -34,3 +34,41 @@
 //     outline: none;
 //   }
 // }
+
+.clients {
+  @include vertical-padding(60px 60px);
+
+  &__set {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: getSize(grid-gap);
+  }
+
+  &__card {
+    flex-basis: calc((100% - getSize(grid-gap)) / 2);
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92px;
+    color: getColor(basic-icon);
+    border: 1px solid getColor(basic-icon);
+    border-radius: 4px;
+    fill: currentColor;
+
+    @include dual-transition(color, border-color);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: getColor(accent);
+    border-color: getColor(accent);
+  }
+  //   &__link:focus-visible {
+  //     outline: none;
+  //   }
+}

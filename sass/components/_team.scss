@@ -46,7 +46,7 @@
   background-color: getColor(primary-white);
   box-shadow: getShadow(team-card);
   border-radius: 0px 0px 4px 4px;
-  flex-basis: calc((100% - 3 * getSize(grid-gap)) / 4);
+  // flex-basis: calc((100% - 3 * getSize(grid-gap)) / 4);
 
   &:not(:last-child) {
     margin-bottom: 30px;
