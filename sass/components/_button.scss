@@ -29,3 +29,11 @@
 //   gap: 25px;
 //   fill: getColor(primary-white);
 // }
+
+.subscribe-form__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  fill: getColor(primary-white);
+}
