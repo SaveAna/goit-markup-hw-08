@@ -1,6 +1,18 @@
 @mixin respond-to($breakpoint) {
-  @if map-has-key($breakpoints, $breakpoint) {
-    @media screen and #{inspect(map-get($breakpoints, $breakpoint))} {
+  @if $breakpoint == 'mobile' {
+    @media screen and #{inspect(getPoint(mobile))} {
+      @content;
+    }
+  }
+
+  @if $breakpoint == 'tablet' {
+    @media screen and #{inspect(getPoint(tablet))} {
+      @content;
+    }
+  }
+
+  @if $breakpoint == 'desktop' {
+    @media screen and #{inspect(getPoint(desktop))} {
       @content;
     }
   }
@@ -11,9 +23,6 @@
       (min-resolution: 2dppx) {
       @content;
     }
-  } @else {
-    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
-        + "Available breakpoints are: #{map-keys($breakpoints)}.";
   }
 }
 
@@ -48,3 +57,13 @@
 //     @content;
 //   }
 // }
+
+// @if map-has-key($breakpoints, $breakpoint) {
+//   @media screen and #{inspect(map-get($breakpoints, $breakpoint))} {
+//     @content;
+//   }
+// }
+// @else {
+//     @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+//         + "Available breakpoints are: #{getPoint($breakpoints)}.";
+//   }

@@ -24,12 +24,17 @@
   &__container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
 
   &__link {
     font-weight: 500;
     letter-spacing: 0.02em;
     color: inherit;
+  }
+
+  @include respond-to(tablet) {
+  }
+
+  @include respond-to(desktop) {
   }
 }

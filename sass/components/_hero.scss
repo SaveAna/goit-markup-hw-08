@@ -30,19 +30,56 @@
   text-align: center;
   color: getColor(primary-white);
 
+  max-width: getSize(desktop-max);
   @include vertical-padding(118px, 118px);
   margin-left: auto;
   margin-right: auto;
   background-color: getBgColor(hero);
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 
-  max-width: getSize(mobile-width);
-  background-size: getSize(mobile-width) 400px;
+  // max-width: getSize(mobile-width);
+  // background-size: getSize(mobile-width) 400px;
   background-image: linear-gradient(to right, getBgColor(hero-overlay), getBgColor(hero-overlay)),
     url('../images/background/bg-mobile-480.jpg');
 
   @include respond-to(retina) {
-    background-image: url('../images/background/bg-mobile-480@2x.jpg');
+    background-image: linear-gradient(to right, getBgColor(hero-overlay), getBgColor(hero-overlay)),
+      url('../images/background/bg-mobile-480@2x.jpg');
+  }
+
+  @include respond-to(tablet) {
+    // max-width: getSize(tablet-width);
+    // background-size: getSize(tablet-width) 400px;
+    background-image: linear-gradient(to right, getBgColor(hero-overlay), getBgColor(hero-overlay)),
+      url('../images/background/bg-tablet-768.jpg');
+
+    @include respond-to(retina) {
+      background-image: linear-gradient(
+          to right,
+          getBgColor(hero-overlay),
+          getBgColor(hero-overlay)
+        ),
+        url('../images/background/bg-tablet-768@2x.jpg');
+    }
+  }
+
+  @include respond-to(desktop) {
+    @include vertical-padding(200px, 200px);
+    // max-width: getSize(hero-width);
+    // background-size: getSize(hero-width) 600px;
+    background-image: linear-gradient(to right, getBgColor(hero-overlay), getBgColor(hero-overlay)),
+      url('../images/background/bg-desktop-1600.jpg');
+
+    @include respond-to(retina) {
+      background-image: linear-gradient(
+          to right,
+          getBgColor(hero-overlay),
+          getBgColor(hero-overlay)
+        ),
+        url('../images/background/bg-desktop-1600@2x.jpg');
+    }
   }
 
   &__title {
@@ -56,5 +93,11 @@
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
+
+    @include respond-to(desktop) {
+      font-size: 44px;
+      line-height: 1.36;
+      max-width: 696px;
+    }
   }
 }

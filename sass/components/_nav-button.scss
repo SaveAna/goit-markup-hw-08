@@ -9,6 +9,10 @@
   @include vertical-padding(10px, 10px);
   @include base-transition(fill);
 
+  &--append {
+    margin-left: auto;
+  }
+
   &:hover,
   &:focus {
     fill: getColor(accent);
