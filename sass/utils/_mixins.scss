@@ -5,12 +5,6 @@
     }
   }
 
-  @if $breakpoint == 'long-tablet' {
-    @media screen and (getPoint(tablet)) and (getPoint(max-tablet)) {
-      @content;
-    }
-  }
-
   @if $breakpoint == 'retina' {
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -48,3 +42,9 @@
   transition: $a-property 350ms getAnim(func), $b-property 350ms getAnim(func),
     $c-property 300ms getAnim(func);
 }
+
+// @if $breakpoint == 'long-tablet' {
+//   @media screen and (getPoint(tablet)) and (getPoint(max-tablet)) {
+//     @content;
+//   }
+// }

@@ -10,8 +10,6 @@
   padding-left: getSize(contain-padding);
   padding-right: getSize(contain-padding);
   margin: 0 auto;
-
-  // !!!to do responsible mobile!!!
   @include respond-to(mobile) {
     width: getSize(mobile-width);
   }
@@ -22,4 +20,8 @@
   @include respond-to(desktop) {
     width: getSize(desktop-width);
   }
+}
+
+.portfolio__container {
+  @include vertical-padding(60px, 60px);
 }

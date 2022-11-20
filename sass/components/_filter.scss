@@ -38,7 +38,7 @@
   column-gap: 8px;
   row-gap: 15px;
 
-  @include vertical-padding(60px, 40px);
+  padding-bottom: 40px;
 
   &__button {
     font-weight: 500;
