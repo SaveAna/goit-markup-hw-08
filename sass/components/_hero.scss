@@ -30,10 +30,11 @@
   text-align: center;
   color: getColor(primary-white);
 
-  max-width: getSize(desktop-max);
   @include vertical-padding(118px, 118px);
+  max-width: getSize(desktop-max);
   margin-left: auto;
   margin-right: auto;
+
   background-color: getBgColor(hero);
   background-size: cover;
   background-repeat: no-repeat;

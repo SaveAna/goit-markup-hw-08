@@ -225,7 +225,6 @@ button {
 .hero {
   text-align: center;
   color: #ffffff;
-  max-width: 1600px;
   padding-top: 118px;
   padding-bottom: 118px;
   margin-left: auto;
@@ -360,6 +359,37 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 768px) {
+  .features__set {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+  .features__item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+  .features__title {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .features__set {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .features__item {
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .team {

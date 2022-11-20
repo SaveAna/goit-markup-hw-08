@@ -78,4 +78,31 @@
     letter-spacing: 0.03em;
     color: getColor(basic);
   }
+
+  @include respond-to(tablet) {
+    &__set {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    &__item {
+      flex-basis: calc((100% - getSize(grid-gap)) / 2);
+    }
+
+    &__title {
+      text-align: left;
+    }
+  }
+
+  @include respond-to(desktop) {
+    @include vertical-padding();
+    &__set {
+      flex-wrap: nowrap;
+    }
+
+    &__item {
+      flex-basis: calc((100% - 3 * getSize(grid-gap)) / 4);
+    }
+  }
 }
