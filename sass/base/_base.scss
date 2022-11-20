@@ -38,9 +38,9 @@ button {
   cursor: pointer;
 }
 
-.section {
-  @include vertical-padding();
-}
+// .section {
+//   @include vertical-padding();
+// }
 
 // .section-title {
 //   font-size: 36px;
@@ -55,4 +55,8 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
+
+  &--hidden {
+    @extend %visually-hidden;
+  }
 }

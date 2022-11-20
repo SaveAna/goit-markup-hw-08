@@ -26,16 +26,16 @@
         <a class="logo logo--prepend" href="./index.html"
           ><span class="logo__accent">Web</span>Studio</a
         >
-        <button data-modal-open class="nav-button nav-button--append" type="button">
+        <button menu-open class="nav-button nav-button--append" type="button">
           <svg width="40" height="40">
             <use href="./images/icons.svg#burger"></use>
           </svg>
         </button>
         <!-- ========== nav-menu ========== -->
-        <div data-modal class="backdrop backdrop--hidden">
-          <div class="modal header__modal">
-            <button data-modal-close class="close-button header__close-button" type="button">
-              <svg width="18.67" height="18.67">
+        <div menu class="backdrop backdrop--hidden">
+          <div class="menu">
+            <button menu-close class="close-button menu__close-button" type="button">
+              <svg width="18.76" height="18.67">
                 <use href="./images/icons.svg#close"></use>
               </svg>
             </button>
@@ -44,10 +44,8 @@
                 <li class="site-nav__item">
                   <a class="header__link" href="./index.html">Studio </a>
                 </li>
-                <li class="site-nav__item">
-                  <a class="header__link site-nav__item--current" href="./portfolio.html"
-                    >Portfolio</a
-                  >
+                <li class="site-nav__item site-nav__item--current">
+                  <a class="header__link" href="./portfolio.html">Portfolio</a>
                 </li>
                 <li class="site-nav__item">
                   <a class="header__link" href="#">Contacts</a>
@@ -82,31 +80,25 @@
             </ul>
           </div>
         </div>
+
         <!-- <nav>
           <ul class="site-nav">
             <li>
-              <a class="header__link site-nav__item header__link--expanded" href="./index.html"
+              <a class="header__link site-nav__item site-nav__item--current" href="./index.html"
                 >Studio
               </a>
             </li>
             <li>
-              <a
-                class="header__link site-nav__item header__link--expanded site-nav__item--current"
-                href="./portfolio.html"
-                >Portfolio</a
-              >
+              <a class="header__link site-nav__item" href="./portfolio.html">Portfolio</a>
             </li>
             <li>
-              <a class="header__link site-nav__item header__link--expanded" href="#">Contacts</a>
+              <a class="header__link site-nav__item" href="#">Contacts</a>
             </li>
           </ul>
         </nav>
         <ul class="contacts contacts--append">
           <li>
-            <a
-              class="header__link contacts__item header__link--expanded"
-              href="mailto:info@devstudio.com"
-            >
+            <a class="header__link contacts__item" href="mailto:info@devstudio.com">
               <svg width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
@@ -114,7 +106,7 @@
             </a>
           </li>
           <li>
-            <a class="header__link contacts__item header__link--expanded" href="tel:12127724150">
+            <a class="header__link contacts__item" href="tel:12127724150">
               <svg width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
@@ -309,7 +301,7 @@
             ><span class="logo__accent">Web</span>Studio</a
           >
           <address>
-            <ul class="address">
+            <ul class="address address--separated">
               <li class="address__item">
                 <a
                   class="address__link address__link--colored"
@@ -330,7 +322,7 @@
         </div>
         <div>
           <p class="footer__label">Find us on</p>
-          <ul class="social-networks">
+          <ul class="social-networks social-networks--separated">
             <li>
               <a
                 class="social-networks__link footer__social-networks"
@@ -378,10 +370,8 @@
           </ul>
         </div>
         <form class="subscribe-form js-speaker">
-          <div>
-            <label for="subscribe-email" class="subscribe-form__label"
-              >Subscribe to the newsletter</label
-            >
+          <label class="subscribe-form__field">
+            <span class="subscribe-form__label">Subscribe to the newsletter</span>
             <input
               type="email"
               class="subscribe-form__input"
@@ -390,8 +380,8 @@
               placeholder="E-mail"
               minlength="4"
             />
-          </div>
-          <button class="button subscribe-form__button" type="submit">
+          </label>
+          <button class="button subscribe-form__button button--centered" type="submit">
             Subscribe
             <svg width="24" height="24">
               <use href="./images/icons.svg#icon-send"></use>

@@ -45,12 +45,6 @@
 .features {
   @include vertical-padding(60px, 60px);
 
-  .section-title {
-    &--hidden {
-      @extend %visually-hidden;
-    }
-  }
-
   &__item {
     width: 100%;
   }

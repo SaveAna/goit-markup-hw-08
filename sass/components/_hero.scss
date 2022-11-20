@@ -27,24 +27,22 @@
 //     }
 
 .hero {
-  width: 480px;
-  height: 400px;
   text-align: center;
   color: getColor(primary-white);
-  background-image: linear-gradient(to right, getBgColor(hero-overlay), getBgColor(hero-overlay)),
-    url('../images/bg-mobile-480.jpg');
-  background-size: 480px 400px;
-  background-repeat: no-repeat;
-  background-position: center;
 
   @include vertical-padding(118px, 118px);
   margin-left: auto;
   margin-right: auto;
+  background-color: getBgColor(hero);
+  background-repeat: no-repeat;
 
-  @media (min-device-pexel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    & {
-      background-image: url('../images/background/bg-mobile-480@2x.jpg');
-    }
+  max-width: getSize(mobile-width);
+  background-size: getSize(mobile-width) 400px;
+  background-image: linear-gradient(to right, getBgColor(hero-overlay), getBgColor(hero-overlay)),
+    url('../images/background/bg-mobile-480.jpg');
+
+  @include respond-to(retina) {
+    background-image: url('../images/background/bg-mobile-480@2x.jpg');
   }
 
   &__title {

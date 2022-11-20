@@ -131,4 +131,14 @@ $breakpoints: (
   'desktop': (
     min-width: 1200px,
   ),
+  'max-mobile': (
+    max-width: 767.99px,
+  ),
+  'max-tablet': (
+    max-width: 1199.99px,
+  ),
 ) !default;
+
+@function getPoint($var) {
+  @return map-get($breakpoints, $var);
+}
