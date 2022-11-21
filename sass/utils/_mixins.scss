@@ -5,6 +5,12 @@
     }
   }
 
+  @if $breakpoint == 'max-mobile' {
+    @media screen and #{inspect(getPoint(max-mobile))} {
+      @content;
+    }
+  }
+
   @if $breakpoint == 'tablet' {
     @media screen and #{inspect(getPoint(tablet))} {
       @content;

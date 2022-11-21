@@ -9,6 +9,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  @include vertical-padding(118px, 118px);
 
   &__title {
     font-weight: 900;
@@ -23,8 +24,7 @@
     margin-right: auto;
   }
 
-  @include respond-to(mobile) {
-    @include vertical-padding(118px, 118px);
+  @include respond-to(max-mobile) {
     // max-width: getSize(mobile-width);
     // background-size: getSize(mobile-width) 400px;
     background-image: linear-gradient(to right, getBgColor(hero-overlay), getBgColor(hero-overlay)),
