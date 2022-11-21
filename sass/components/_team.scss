@@ -37,7 +37,6 @@
 // }
 
 .team {
-  @include vertical-padding(60px, 60px);
   background-color: getBgColor(light);
 }
 
@@ -46,7 +45,6 @@
   background-color: getColor(primary-white);
   box-shadow: getShadow(team-card);
   border-radius: 0px 0px 4px 4px;
-  // flex-basis: calc((100% - 3 * getSize(grid-gap)) / 4);
 
   &:not(:last-child) {
     margin-bottom: 30px;
@@ -70,5 +68,35 @@
 
   &__info {
     @include vertical-padding(30px, 24px);
+  }
+
+  @include respond-to(tablet) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &__set {
+      display: flex;
+      flex-wrap: wrap;
+      gap: getSize(grid-gap);
+    }
+
+    .teammate {
+      flex-basis: calc((100% - getSize(grid-gap)) / 2);
+    }
+  }
+
+  @include respond-to(desktop) {
+    &__set {
+      flex-wrap: nowrap;
+    }
+
+    .teammate {
+      flex-basis: calc((100% - 3 * getSize(grid-gap)) / 4);
+    }
+
+    &__info {
+      @include vertical-padding(30px, 30px);
+    }
   }
 }

@@ -43,14 +43,12 @@
 // }
 
 .features {
-  @include vertical-padding(60px, 60px);
-
   &__item {
     width: 100%;
   }
 
   &__item:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: getSize(grid-gap);
   }
 
   &__thumb {
@@ -60,7 +58,7 @@
     height: 120px;
     background-color: getBgColor(light);
     border-radius: 4px;
-    margin-bottom: 30px;
+    margin-bottom: getSize(grid-gap);
   }
 
   &__title {
@@ -90,13 +88,16 @@
       flex-basis: calc((100% - getSize(grid-gap)) / 2);
     }
 
+    &__item:not(:last-child) {
+      margin-bottom: 0;
+    }
+
     &__title {
       text-align: left;
     }
   }
 
   @include respond-to(desktop) {
-    @include vertical-padding();
     &__set {
       flex-wrap: nowrap;
     }

@@ -25,4 +25,8 @@
 
 .portfolio__container {
   @include vertical-padding(60px, 60px);
+
+  @include respond-to(desktop) {
+    @include vertical-padding();
+  }
 }

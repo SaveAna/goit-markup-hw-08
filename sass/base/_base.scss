@@ -38,17 +38,14 @@ button {
   cursor: pointer;
 }
 
-// .section {
-//   @include vertical-padding();
-// }
+.section {
+  @include vertical-padding(60px, 60px);
 
-// .section-title {
-//   font-size: 36px;
-//   line-height: 1.16;
-//   text-align: center;
-//   letter-spacing: 0.03em;
-//   margin-bottom: 50px;
-// }
+  @include respond-to(desktop) {
+    @include vertical-padding();
+  }
+}
+
 .section-title {
   font-size: 28px;
   line-height: 1.18;
@@ -58,5 +55,11 @@ button {
 
   &--hidden {
     @extend %visually-hidden;
+  }
+
+  @include respond-to(desktop) {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
   }
 }

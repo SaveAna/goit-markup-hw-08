@@ -82,6 +82,17 @@ button {
   cursor: pointer;
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .section-title {
   font-size: 28px;
   line-height: 1.18;
@@ -89,6 +100,14 @@ button {
   letter-spacing: 0.03em;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -113,6 +132,12 @@ button {
 .portfolio__container {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .header {
@@ -227,6 +252,7 @@ button {
   color: #ffffff;
   padding-top: 118px;
   padding-bottom: 118px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-color: #c4c4c4;
@@ -321,10 +347,6 @@ button {
   fill: #ffffff;
 }
 
-.features {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 .features__item {
   width: 100%;
 }
@@ -373,15 +395,14 @@ button {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
   }
+  .features__item:not(:last-child) {
+    margin-bottom: 0;
+  }
   .features__title {
     text-align: left;
   }
 }
 @media screen and (min-width: 1200px) {
-  .features {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
   .features__set {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -393,8 +414,6 @@ button {
 }
 
 .team {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-color: #f5f4fa;
 }
 
@@ -425,6 +444,37 @@ button {
 .teammate__info {
   padding-top: 30px;
   padding-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .teammate:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .teammate__set {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+  .teammate .teammate {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .teammate__set {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .teammate .teammate {
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+  }
+  .teammate__info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .social-networks {
