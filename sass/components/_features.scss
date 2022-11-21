@@ -1,56 +1,4 @@
-// .features {
-//   @include vertical-padding();
-
-//   &__set {
-//     display: flex;
-//     gap: 30px;
-//   }
-
-//   &__item {
-//     flex-basis: calc((100% - 3 * 30px) / 4);
-//   }
-
-//   &__thumb {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     height: 120px;
-//     background-color: getBgColor(light);
-//     border-radius: 4px;
-//     margin-bottom: 30px;
-//   }
-
-//   &__title {
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.03em;
-//     text-transform: uppercase;
-//     margin-bottom: 10px;
-//   }
-
-//   &__subtitle {
-//     font-size: 14px;
-//     line-height: 1.71;
-//     letter-spacing: 0.03em;
-//     color: getColor(basic);
-//   }
-// }
-
-// .section-title {
-//   &--hidden {
-//     @extend %visually-hidden;
-//   }
-// }
-
 .features {
-  &__item {
-    width: 100%;
-  }
-
-  &__item:not(:last-child) {
-    margin-bottom: getSize(grid-gap);
-  }
-
   &__thumb {
     display: flex;
     align-items: center;
@@ -75,6 +23,16 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: getColor(basic);
+  }
+
+  @include respond-to(mobile) {
+    &__item {
+      width: 100%;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: getSize(grid-gap);
+    }
   }
 
   @include respond-to(tablet) {

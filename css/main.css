@@ -129,17 +129,6 @@ button {
   }
 }
 
-.portfolio__container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-@media screen and (min-width: 1200px) {
-  .portfolio__container {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -250,8 +239,6 @@ button {
 .hero {
   text-align: center;
   color: #ffffff;
-  padding-top: 118px;
-  padding-bottom: 118px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -259,10 +246,27 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/background/bg-mobile-480.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/bg-mobile-480.jpg");
 }
-@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+.hero__title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  max-width: 360px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/background/bg-mobile-480.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/bg-mobile-480.jpg");
+  }
+}
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/background/bg-mobile-480@2x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/bg-mobile-480@2x.jpg");
@@ -293,17 +297,6 @@ button {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/background/bg-desktop-1600@2x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/bg-desktop-1600@2x.jpg");
   }
-}
-.hero__title {
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.62;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  max-width: 360px;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -347,12 +340,6 @@ button {
   fill: #ffffff;
 }
 
-.features__item {
-  width: 100%;
-}
-.features__item:not(:last-child) {
-  margin-bottom: 30px;
-}
 .features__thumb {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -381,6 +368,14 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 480px) {
+  .features__item {
+    width: 100%;
+  }
+  .features__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .features__set {
@@ -424,9 +419,6 @@ button {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.teammate:not(:last-child) {
-  margin-bottom: 30px;
-}
 .teammate__name {
   font-weight: 500;
   font-size: 16px;
@@ -444,6 +436,11 @@ button {
 .teammate__info {
   padding-top: 30px;
   padding-bottom: 24px;
+}
+@media screen and (min-width: 480px) {
+  .teammate:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .teammate:not(:last-child) {

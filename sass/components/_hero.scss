@@ -1,8 +1,6 @@
 .hero {
   text-align: center;
   color: getColor(primary-white);
-
-  @include vertical-padding(118px, 118px);
   max-width: getSize(hero-width);
   margin-left: auto;
   margin-right: auto;
@@ -12,14 +10,34 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  // max-width: getSize(mobile-width);
-  // background-size: getSize(mobile-width) 400px;
-  background-image: linear-gradient(to right, getBgColor(hero-overlay), getBgColor(hero-overlay)),
-    url('../images/background/bg-mobile-480.jpg');
+  &__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 
-  @include respond-to(retina) {
+    max-width: 360px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include respond-to(mobile) {
+    @include vertical-padding(118px, 118px);
+    // max-width: getSize(mobile-width);
+    // background-size: getSize(mobile-width) 400px;
     background-image: linear-gradient(to right, getBgColor(hero-overlay), getBgColor(hero-overlay)),
-      url('../images/background/bg-mobile-480@2x.jpg');
+      url('../images/background/bg-mobile-480.jpg');
+
+    @include respond-to(retina) {
+      background-image: linear-gradient(
+          to right,
+          getBgColor(hero-overlay),
+          getBgColor(hero-overlay)
+        ),
+        url('../images/background/bg-mobile-480@2x.jpg');
+    }
   }
 
   @include respond-to(tablet) {
@@ -53,21 +71,8 @@
         ),
         url('../images/background/bg-desktop-1600@2x.jpg');
     }
-  }
 
-  &__title {
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.62;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-
-    max-width: 360px;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-
-    @include respond-to(desktop) {
+    &__title {
       font-size: 44px;
       line-height: 1.36;
       max-width: 696px;
