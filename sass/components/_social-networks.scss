@@ -50,8 +50,10 @@
     border-radius: 50%;
   }
 
-  &--separated {
-    margin-bottom: 60px;
+  @include respond-to(max-mobile) {
+    &--separated {
+      margin-bottom: 60px;
+    }
   }
 
   @include respond-to(desktop) {
