@@ -53,6 +53,12 @@
   &--separated {
     margin-bottom: 60px;
   }
+
+  @include respond-to(desktop) {
+    &__link:focus-visible {
+      outline: none;
+    }
+  }
 }
 
 .team__social-networks {

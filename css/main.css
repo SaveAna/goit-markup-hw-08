@@ -501,6 +501,11 @@ button {
 .social-networks--separated {
   margin-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .social-networks__link:focus-visible {
+    outline: none;
+  }
+}
 
 .team__social-networks {
   color: #afb1b8;
