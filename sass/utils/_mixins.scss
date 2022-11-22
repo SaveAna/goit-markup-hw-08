@@ -17,12 +17,6 @@
     }
   }
 
-  // @if $breakpoint == 'long-tablet' {
-  //   @media screen and #{inspect(getPoint(tablet))} and #{inspect(getPoint(max-tablet))} {
-  //     @content;
-  //   }
-  // }
-
   @if $breakpoint == 'only-tablet' {
     @media #{inspect(getPoint(tablet))} and #{inspect(getPoint(max-tablet))} {
       @content;
@@ -76,18 +70,4 @@
     $c-property 300ms getAnim(func);
 }
 
-// @if $breakpoint == 'long-tablet' {
-//   @media screen and (getPoint(tablet)) and (getPoint(max-tablet)) {
-//     @content;
-//   }
-// }
-
-// @if map-has-key($breakpoints, $breakpoint) {
-//   @media screen and #{inspect(map-get($breakpoints, $breakpoint))} {
-//     @content;
-//   }
-// }
-// @else {
-//     @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
-//         + "Available breakpoints are: #{getPoint($breakpoints)}.";
-//   }
+// ======================================

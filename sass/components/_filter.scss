@@ -33,12 +33,7 @@
 
 .filter {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
   column-gap: 8px;
-  row-gap: 15px;
-
-  padding-bottom: 40px;
 
   &__button {
     font-weight: 500;
@@ -60,5 +55,30 @@
     color: getColor(primary-white);
     background-color: getColor(accent);
     box-shadow: getShadow(filter-btn);
+  }
+
+  @include respond-to(max-mobile) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: 15px;
+  }
+
+  @include respond-to(tablet) {
+    justify-content: center;
+  }
+
+  @include respond-to(only-tablet) {
+    margin-bottom: 30px;
+  }
+
+  @include respond-to(desktop) {
+    margin-bottom: 50px;
+  }
+}
+
+@include respond-to(max-mobile) {
+  .width-limiter {
+    padding-right: 155px;
+    margin-bottom: 40px;
   }
 }
