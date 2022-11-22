@@ -11,14 +11,26 @@
     }
   }
 
-  // @if $breakpoint == 'long-mobile' {
-  //   @media screen and #{inspect(getPoint(mobile))}, #{inspect(getPoint(max-mobile))} {
+  @if $breakpoint == 'tablet' {
+    @media screen and #{inspect(getPoint(tablet))} {
+      @content;
+    }
+  }
+
+  // @if $breakpoint == 'long-tablet' {
+  //   @media screen and #{inspect(getPoint(tablet))} and #{inspect(getPoint(max-tablet))} {
   //     @content;
   //   }
   // }
 
-  @if $breakpoint == 'tablet' {
-    @media screen and #{inspect(getPoint(tablet))} {
+  @if $breakpoint == 'only-tablet' {
+    @media #{inspect(getPoint(tablet))} and #{inspect(getPoint(max-tablet))} {
+      @content;
+    }
+  }
+
+  @if $breakpoint == 'max-tablet' {
+    @media screen and #{inspect(getPoint(max-tablet))} {
       @content;
     }
   }

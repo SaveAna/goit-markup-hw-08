@@ -1,7 +1,6 @@
 .clients {
   &__set {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: getSize(grid-gap);
@@ -38,11 +37,13 @@
     }
   }
 
-  @include respond-to(desktop) {
+  @include respond-to(max-tablet) {
     &__set {
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
     }
+  }
 
+  @include respond-to(desktop) {
     &__card {
       flex-basis: calc(100% - 5 * getSize(grid-gap) / 6);
     }

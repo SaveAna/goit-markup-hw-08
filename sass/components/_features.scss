@@ -39,7 +39,7 @@
     &__set {
       display: flex;
       flex-wrap: wrap;
-      gap: 30px;
+      gap: getSize(grid-gap);
     }
 
     &__item {
@@ -55,11 +55,13 @@
     }
   }
 
-  @include respond-to(desktop) {
+  @include respond-to(only-tablet) {
     &__set {
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
     }
+  }
 
+  @include respond-to(desktop) {
     &__item {
       flex-basis: calc((100% - 3 * getSize(grid-gap)) / 4);
     }

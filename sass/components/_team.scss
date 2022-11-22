@@ -4,14 +4,13 @@
   @include respond-to(tablet) {
     &__set {
       display: flex;
-      flex-wrap: wrap;
       gap: getSize(grid-gap);
     }
   }
 
-  @include respond-to(desktop) {
+  @include respond-to(only-tablet) {
     &__set {
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
     }
   }
 }
