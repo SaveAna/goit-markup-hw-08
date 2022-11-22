@@ -411,6 +411,22 @@ button {
 .team {
   background-color: #f5f4fa;
 }
+@media screen and (min-width: 768px) {
+  .team__set {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__set {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
 
 .teammate {
   text-align: center;
@@ -437,34 +453,19 @@ button {
   padding-top: 30px;
   padding-bottom: 24px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767.99px) {
   .teammate:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) {
-  .teammate:not(:last-child) {
-    margin-bottom: 0;
-  }
-  .teammate__set {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 30px;
-  }
-  .teammate .teammate {
+  .teammate {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
-  .teammate__set {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-  .teammate .teammate {
+  .teammate {
     -ms-flex-preferred-size: calc((100% - 90px) / 4);
         flex-basis: calc((100% - 90px) / 4);
   }
@@ -515,10 +516,6 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 .clients__set {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -532,10 +529,6 @@ button {
       -ms-flex-align: center;
           align-items: center;
   gap: 30px;
-}
-.clients__card {
-  -ms-flex-preferred-size: calc((100% - 30px) / 2);
-      flex-basis: calc((100% - 30px) / 2);
 }
 .clients__link {
   display: -webkit-box;
@@ -558,6 +551,28 @@ button {
 .clients__link:hover, .clients__link:focus {
   color: #2196f3;
   border-color: #2196f3;
+}
+@media screen and (max-width: 767.99px) {
+  .clients__card {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients__card {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__set {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .clients__card {
+    -ms-flex-preferred-size: calc(100% - 25px);
+        flex-basis: calc(100% - 25px);
+  }
 }
 
 .footer {

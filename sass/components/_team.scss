@@ -1,5 +1,19 @@
 .team {
   background-color: getBgColor(light);
+
+  @include respond-to(tablet) {
+    &__set {
+      display: flex;
+      flex-wrap: wrap;
+      gap: getSize(grid-gap);
+    }
+  }
+
+  @include respond-to(desktop) {
+    &__set {
+      flex-wrap: nowrap;
+    }
+  }
 }
 
 .teammate {
@@ -28,36 +42,18 @@
     @include vertical-padding(30px, 24px);
   }
 
-  @include respond-to(mobile) {
+  @include respond-to(max-mobile) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
 
   @include respond-to(tablet) {
-    &:not(:last-child) {
-      margin-bottom: 0;
-    }
-
-    &__set {
-      display: flex;
-      flex-wrap: wrap;
-      gap: getSize(grid-gap);
-    }
-
-    .teammate {
-      flex-basis: calc((100% - getSize(grid-gap)) / 2);
-    }
+    flex-basis: calc((100% - getSize(grid-gap)) / 2);
   }
 
   @include respond-to(desktop) {
-    &__set {
-      flex-wrap: nowrap;
-    }
-
-    .teammate {
-      flex-basis: calc((100% - 3 * getSize(grid-gap)) / 4);
-    }
+    flex-basis: calc((100% - 3 * getSize(grid-gap)) / 4);
 
     &__info {
       @include vertical-padding(30px, 30px);
