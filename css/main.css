@@ -580,6 +580,9 @@ button {
     -ms-flex-preferred-size: calc(100% - 25px);
         flex-basis: calc(100% - 25px);
   }
+  .clients__link:focus-visible {
+    outline: none;
+  }
 }
 
 .footer {
@@ -597,6 +600,32 @@ button {
   color: #ffffff;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-column-gap: 165px;
+       -moz-column-gap: 165px;
+            column-gap: 165px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    text-align: left;
+    gap: 93px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
 
 .address--separated {
   margin-bottom: 50px;
@@ -613,6 +642,11 @@ button {
 }
 .address__link--colored {
   color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .address {
+    width: 207px;
+  }
 }
 
 .subscribe-form__field {
