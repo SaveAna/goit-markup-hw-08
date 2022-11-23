@@ -1,43 +1,52 @@
-// .site-nav {
-//   display: flex;
-//   gap: 50px;
-
-//   &__item {
-//     &--current {
-//       position: relative;
-//       color: getColor(accent);
-//     }
-//     &--current::after {
-//       content: '';
-//       position: absolute;
-//       display: block;
-//       bottom: -1px;
-//       width: 100%;
-//       height: 4px;
-//       background-color: getColor(accent);
-//       border-radius: 2px;
-//     }
-//   }
-// }
-
 .site-nav {
-  font-size: 40px;
-  line-height: 1.18;
   letter-spacing: 0.02em;
 
-  &__item {
-    @extend %link-active;
+  @include respond-to(max-mobile) {
+    font-size: 40px;
+    line-height: 1.18;
+
+    &__item {
+      @include base-transition(color);
+
+      &:focus,
+      &:hover {
+        color: getColor(accent);
+      }
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 32px;
+    }
+
+    &__item--current {
+      color: getColor(accent);
+    }
+
+    &--prepend {
+      margin-bottom: 306px;
+    }
   }
 
-  &__item:not(:last-child) {
-    margin-bottom: 32px;
-  }
+  @include respond-to(tablet) {
+    display: flex;
+    gap: 50px;
 
-  &__item--current {
-    color: getColor(accent);
-  }
+    &__item {
+      &--current {
+        position: relative;
+        color: getColor(accent);
+      }
 
-  &--prepend {
-    margin-bottom: 306px;
+      &--current::after {
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: -1px;
+        width: 100%;
+        height: 4px;
+        background-color: getColor(accent);
+        border-radius: 2px;
+      }
+    }
   }
 }

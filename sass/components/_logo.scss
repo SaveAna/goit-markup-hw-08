@@ -36,6 +36,12 @@
   &--separated {
     margin-bottom: 28px;
   }
+
+  @include respond-to(tablet) {
+    &--prepend {
+      margin-right: 93px;
+    }
+  }
 }
 
 .footer__logo {

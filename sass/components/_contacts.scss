@@ -20,24 +20,30 @@
   font-weight: 500;
   letter-spacing: 0.02em;
 
-  &__item {
-    color: getColor(basic);
-  }
+  @include respond-to(max-mobile) {
+    &__icon {
+      display: none;
+    }
 
-  &__item:first-child {
-    font-size: 34px;
-    line-height: 40px;
-    margin-bottom: 32px;
-    @extend %accent;
-  }
+    &__item {
+      color: getColor(basic);
+    }
 
-  &__item:last-child {
-    font-size: 24px;
-    line-height: 28px;
-    color: getColor(form);
-  }
+    &__item:first-child {
+      font-size: 34px;
+      line-height: 40px;
+      margin-bottom: 32px;
+      color: getColor(accent);
+    }
 
-  &--separated {
-    margin-bottom: 64px;
+    &__item:last-child {
+      font-size: 24px;
+      line-height: 28px;
+      color: getColor(form);
+    }
+
+    &--separated {
+      margin-bottom: 64px;
+    }
   }
 }

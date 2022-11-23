@@ -12,15 +12,15 @@
   overflow: hidden;
 }
 
-.social-links__item, .contacts__item:first-child, .logo__accent {
+.logo__accent {
   color: #2196f3;
 }
 
-.address__link, .site-nav__item {
+.address__link {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.address__link:focus, .site-nav__item:focus, .address__link:hover, .site-nav__item:hover {
+.address__link:focus, .address__link:hover {
   color: #2196f3;
 }
 
@@ -148,6 +148,21 @@ button {
   letter-spacing: 0.02em;
   color: inherit;
 }
+@media screen and (min-width: 768px) {
+  .header__link {
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .header__link:focus, .header__link:hover {
+    color: #2196f3;
+  }
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -158,71 +173,123 @@ button {
 .logo--separated {
   margin-bottom: 28px;
 }
+@media screen and (min-width: 768px) {
+  .logo--prepend {
+    margin-right: 93px;
+  }
+}
 
 .footer__logo {
   color: #ffffff;
 }
 
 .site-nav {
-  font-size: 40px;
-  line-height: 1.18;
   letter-spacing: 0.02em;
 }
-.site-nav__item:not(:last-child) {
-  margin-bottom: 32px;
+@media screen and (max-width: 767.99px) {
+  .site-nav {
+    font-size: 40px;
+    line-height: 1.18;
+  }
+  .site-nav__item {
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .site-nav__item:focus, .site-nav__item:hover {
+    color: #2196f3;
+  }
+  .site-nav__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .site-nav__item--current {
+    color: #2196f3;
+  }
+  .site-nav--prepend {
+    margin-bottom: 306px;
+  }
 }
-.site-nav__item--current {
-  color: #2196f3;
-}
-.site-nav--prepend {
-  margin-bottom: 306px;
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 50px;
+  }
+  .site-nav__item--current {
+    position: relative;
+    color: #2196f3;
+  }
+  .site-nav__item--current::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    background-color: #2196f3;
+    border-radius: 2px;
+  }
 }
 
 .contacts {
   font-weight: 500;
   letter-spacing: 0.02em;
 }
-.contacts__item {
-  color: #757575;
-}
-.contacts__item:first-child {
-  font-size: 34px;
-  line-height: 40px;
-  margin-bottom: 32px;
-}
-.contacts__item:last-child {
-  font-size: 24px;
-  line-height: 28px;
-}
-.contacts--separated {
-  margin-bottom: 64px;
+@media screen and (max-width: 767.99px) {
+  .contacts__icon {
+    display: none;
+  }
+  .contacts__item {
+    color: #757575;
+  }
+  .contacts__item:first-child {
+    font-size: 34px;
+    line-height: 40px;
+    margin-bottom: 32px;
+    color: #2196f3;
+  }
+  .contacts__item:last-child {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .contacts--separated {
+    margin-bottom: 64px;
+  }
 }
 
-.social-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 20px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+@media screen and (max-width: 767.99px) {
+  .social-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .social-links__item {
+    position: relative;
+    color: #2196f3;
+  }
+  .social-links__link {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+  .social-links__item:not(:first-child)::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 22px;
+    left: 0;
+    top: 0;
+    background-color: rgba(33, 33, 33, 0.2);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
 }
-.social-links__item {
-  position: relative;
-}
-.social-links__link {
-  font-size: 18px;
-  line-height: 1.22;
-}
-.social-links__item:not(:first-child)::after {
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 22px;
-  left: 0;
-  top: 0;
-  background-color: rgba(33, 33, 33, 0.2);
-  -webkit-transform: translateX(-10px);
-          transform: translateX(-10px);
+@media screen and (min-width: 768px) {
+  .social-links {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767.99px) {
