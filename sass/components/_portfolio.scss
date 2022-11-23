@@ -78,14 +78,35 @@
 // }
 
 .portfolio-grid {
-  .portfolio-card:not(:last-child) {
-    margin-bottom: getSize(grid-gap);
+  @include respond-to(max-mobile) {
+    .portfolio-card:not(:last-child) {
+      margin-bottom: getSize(grid-gap);
+    }
+  }
+
+  @include respond-to(tablet) {
+    display: flex;
+    gap: getSize(grid-gap);
+    flex-wrap: wrap;
   }
 }
 
 .portfolio-card {
   background-color: getColor(primary-white);
   @include base-transition(box-shadow);
+  height: 100%;
+
+  @include respond-to(only-tablet) {
+    flex-basis: calc((100% - getSize(grid-gap)) / 2);
+  }
+
+  @include respond-to(desktop) {
+    flex-basis: calc((100% - 2 * getSize(grid-gap)) / 3);
+  }
+
+  &__link:focus-visible {
+    outline: none;
+  }
 
   &__link {
     display: block;
@@ -124,6 +145,12 @@
     padding: 20px 24px;
     border: 1px solid getBorderColor(portfolio);
     border-top: none;
+
+    @include respond-to(only-tablet) {
+      &--growing {
+        padding-bottom: 56px;
+      }
+    }
   }
 
   &__title {

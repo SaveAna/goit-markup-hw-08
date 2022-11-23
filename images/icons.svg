@@ -79,6 +79,9 @@
     <symbol id="icon-check" viewBox="0 0 42 32">
       <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.64" d="M6.263 15.205l-0.22-0.21-3.307 3.132 11.651 11.114 24.477-23.351-3.285-3.134-21.192 20.197-8.124-7.75z"></path>
     </symbol>
+    <symbol id="cross" viewBox="0 0 32 32">
+      <path d="M23.733 10.304l-1.504-1.504-5.963 5.963-5.963-5.963-1.504 1.504 5.963 5.963-5.963 5.963 1.504 1.504 5.963-5.963 5.963 5.963 1.504-1.504-5.963-5.963 5.963-5.963z"></path>
+    </symbol>
     <symbol id="burger" viewBox="0 0 32 32">
       <path d="M6.4 11.733v-2.133h19.2v2.133h-19.2zM6.4 17.067h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.133h-19.2v2.133z"></path>
     </symbol>

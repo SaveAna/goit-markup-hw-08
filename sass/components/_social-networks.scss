@@ -50,15 +50,13 @@
     border-radius: 50%;
   }
 
+  &__link:focus-visible {
+    outline: none;
+  }
+
   @include respond-to(max-mobile) {
     &--separated {
       margin-bottom: 60px;
-    }
-  }
-
-  @include respond-to(desktop) {
-    &__link:focus-visible {
-      outline: none;
     }
   }
 }

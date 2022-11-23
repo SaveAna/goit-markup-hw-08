@@ -104,6 +104,10 @@
     border-color: getColor(accent);
   }
 
+  &__input:focus-visible {
+    outline: none;
+  }
+
   @include respond-to(max-mobile) {
     &__input {
       width: 100%;
@@ -129,10 +133,6 @@
 
     &__input {
       width: 358px;
-    }
-
-    &__input:focus-visible {
-      outline: none;
     }
   }
 }

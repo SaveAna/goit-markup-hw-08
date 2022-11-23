@@ -1,36 +1,3 @@
-// .filter {
-//   display: flex;
-//   justify-content: center;
-//   gap: 8px;
-//   margin-bottom: 50px;
-
-//   &__button {
-//     font-weight: 500;
-//     font-size: 16px;
-//     line-height: 1.62;
-//     letter-spacing: 0.03em;
-
-//     color: getColor(primary-black);
-//     background-color: getBgColor(light);
-//     border-color: transparent;
-//     border-radius: 4px;
-//     padding: 6px 22px;
-
-//     @include triple-transition(color, box-shadow, background-color);
-//   }
-
-//   &__button:focus-visible {
-//     outline: none;
-//   }
-
-//   &__button:hover,
-//   &__button:focus {
-//     color: getColor(primary-white);
-//     background-color: getColor(accent);
-//     box-shadow: getShadow(filter-btn);
-//   }
-// }
-
 .filter {
   display: flex;
   column-gap: 8px;
@@ -57,10 +24,19 @@
     box-shadow: getShadow(filter-btn);
   }
 
+  &__button:focus-visible {
+    outline: none;
+  }
+
   @include respond-to(max-mobile) {
     flex-wrap: wrap;
     justify-content: flex-start;
     row-gap: 15px;
+    width: 295px;
+
+    &--separated {
+      margin-bottom: 40px;
+    }
   }
 
   @include respond-to(tablet) {
@@ -73,12 +49,5 @@
 
   @include respond-to(desktop) {
     margin-bottom: 50px;
-  }
-}
-
-@include respond-to(max-mobile) {
-  .width-limiter {
-    padding-right: 155px;
-    margin-bottom: 40px;
   }
 }
