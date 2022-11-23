@@ -1,6 +1,7 @@
 .social-links {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 
   &__item {
     position: relative;

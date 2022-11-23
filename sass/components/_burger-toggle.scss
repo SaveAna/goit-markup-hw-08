@@ -1,0 +1,44 @@
+.burger-toggle {
+  fill: getColor(primary-black);
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  @include vertical-padding(10px, 10px);
+  transition: transform 500ms getAnim(func);
+  z-index: 10;
+
+  &--append {
+    margin-left: auto;
+  }
+
+  &:hover,
+  &:focus {
+    fill: getColor(accent);
+  }
+
+  &:active {
+    transform: scale(1.5);
+    transition: transform 500ms getAnim(func);
+  }
+
+  @include respond-to(tablet) {
+    display: none;
+  }
+
+  & .cross {
+    display: none;
+  }
+
+  &--enabled {
+    .cross {
+      display: block;
+    }
+
+    .burger {
+      display: none;
+    }
+  }
+}

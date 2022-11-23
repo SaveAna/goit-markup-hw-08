@@ -1,16 +1,23 @@
 (() => {
   const refs = {
-    openMenuBtn: document.querySelector('[menu-open]'),
-    closeMenuBtn: document.querySelector('[menu-close]'),
+    toggleMenuBtn: document.querySelector('[toggle]'),
     menu: document.querySelector('[menu]'),
     scroll: document.querySelector('[scroll]'),
   };
 
-  refs.openMenuBtn.addEventListener('click', toggleMenu);
-  refs.closeMenuBtn.addEventListener('click', toggleMenu);
+  refs.toggleMenuBtn.addEventListener('click', toggleMenu);
 
   function toggleMenu() {
-    refs.menu.classList.toggle('backdrop--hidden');
+    refs.menu.classList.toggle('menu--open');
+    refs.toggleMenuBtn.classList.toggle('burger-toggle--enabled');
     refs.scroll.classList.toggle('scroll-hidden');
+    refs.toggleMenuBtn.getAttribute('aria-expanded') === 'true' || false;
   }
+
+  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+    if (!e.matches) return;
+    refs.menu.classList.remove('menu--open');
+    refs.toggleMenuBtn.classList.remove('burger-toggle--enabled');
+    refs.toggleMenuBtn.setAttribute('aria-expanded', false);
+  });
 })();

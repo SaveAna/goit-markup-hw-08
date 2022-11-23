@@ -51,6 +51,9 @@ body {
 .scroll-hidden {
   overflow: hidden;
 }
+.scroll-hidden .menu {
+  overflow-y: scroll;
+}
 
 h1,
 h2,
@@ -200,6 +203,8 @@ button {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .social-links__item {
   position: relative;
@@ -220,22 +225,28 @@ button {
           transform: translateX(-10px);
 }
 
-.menu {
-  position: absolute;
-  height: 796px;
-  width: 100%;
-  background-color: #ffffff;
-  padding: 48px 40px 48px;
-  right: 0;
-  top: 0;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: right 350ms cubic-bezier(0.4, 0, 0.2, 1), top 350ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: right 350ms cubic-bezier(0.4, 0, 0.2, 1), top 350ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: right 350ms cubic-bezier(0.4, 0, 0.2, 1), top 350ms cubic-bezier(0.4, 0, 0.2, 1), transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: right 350ms cubic-bezier(0.4, 0, 0.2, 1), top 350ms cubic-bezier(0.4, 0, 0.2, 1), transform 300ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (max-width: 767.99px) {
+  .menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 48px 40px 48px;
+    background-color: #ffffff;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: scroll;
+  }
+  .menu--open {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
-
 .burger-toggle {
   fill: #212121;
   padding-left: 0;
@@ -250,11 +261,39 @@ button {
   border: none;
   padding-top: 10px;
   padding-bottom: 10px;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 10;
+}
+.burger-toggle--append {
+  margin-left: auto;
 }
 .burger-toggle:hover, .burger-toggle:focus {
   fill: #2196f3;
+}
+.burger-toggle:active {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .burger-toggle {
+    display: none;
+  }
+}
+.burger-toggle .cross {
+  display: none;
+}
+.burger-toggle--enabled .cross {
+  display: block;
+}
+.burger-toggle--enabled .burger {
+  display: none;
 }
 
 .hero {
@@ -836,13 +875,6 @@ button {
   pointer-events: none;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.backdrop--hidden .menu {
-  right: -100%;
-  top: -100%;
-  -webkit-transform: scale(0);
-          transform: scale(0);
 }
 
 .modal {

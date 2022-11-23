@@ -22,18 +22,72 @@
         <a class="logo logo--prepend" href="./index.html"
           ><span class="logo__accent">Web</span>Studio</a
         >
-        <button
+        <!-- <button
           menu-open
           class="nav-button nav-button--append"
           type="button"
           aria-label="open menu"
         >
           <svg width="40" height="40">
-            <use href="./images/icons.svg#burger"></use>
+            <use class="burger" href="./images/icons.svg#burger"></use>
+            <use class="cross" href="./images/icons.svg#close" width="18.76" height="18.67"></use>
+          </svg>
+        </button> -->
+        <button
+          toggle
+          class="burger-toggle burger-toggle--append"
+          type="button"
+          aria-label="open menu"
+          aria-expanded="false"
+        >
+          <svg class="burger__icons" width="40" height="40">
+            <use class="burger" href="./images/icons.svg#burger"></use>
+            <use class="cross" href="./images/icons.svg#cross"></use>
           </svg>
         </button>
+        <div menu class="menu">
+          <nav>
+            <ul class="site-nav site-nav--prepend">
+              <li class="site-nav__item">
+                <a class="header__link site-nav__item--current" href="./index.html">Studio </a>
+              </li>
+              <li class="site-nav__item">
+                <a class="header__link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="header__link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contacts contacts--separated">
+            <li class="contacts__item">
+              <a class="header__link contacts__link--colored" href="tel:12127724150">
+                <span>+1 212-772-4150</span>
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="header__link" href="mailto:info@devstudio.com">
+                <span>info@devstudio.com</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="social-links social-links--append">
+            <li class="social-links__item">
+              <a class="header__link social-links__link" href="#">Instagram</a>
+            </li>
+            <li class="social-links__item">
+              <a class="header__link social-links__link" href="#">Twitter</a>
+            </li>
+            <li class="social-links__item">
+              <a class="header__link social-links__link" href="#">Facebook</a>
+            </li>
+            <li class="social-links__item">
+              <a class="header__link social-links__link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
         <!-- ========== nav-menu ========== -->
-        <div menu class="backdrop backdrop--hidden">
+        <!-- <div menu class="backdrop backdrop--hidden">
           <div class="menu">
             <button
               menu-close
@@ -85,8 +139,8 @@
               </li>
             </ul>
           </div>
-        </div>
-
+        </div> -->
+        <!-- ====================================================================== -->
         <!-- <nav>
           <ul class="site-nav">
             <li>
@@ -184,7 +238,7 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="production">
+      <section class="production">
         <div class="container">
           <h2 class="section-title">What we do</h2>
           <ul class="production__set">
@@ -208,7 +262,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <section class="team section">
         <div class="container">
           <h2 class="section-title">Our Team</h2>

@@ -1,16 +1,37 @@
 .menu {
-  // display: none;
-  position: absolute;
-  height: 796px;
-  width: 100%;
-  background-color: getColor(primary-white);
-  padding: 48px 40px 48px;
-  right: 0;
-  top: 0;
-  transform: scale(1);
-  @include burger(right, top, transform);
+  @include respond-to(max-mobile) {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 48px 40px 48px;
+    background-color: getColor(primary-white);
+
+    transform: translateX(100%);
+    @include base-transition(transform);
+    overflow-y: scroll;
+
+    &--open {
+      transform: translateX(0);
+    }
+  }
+
+  @include respond-to(tablet) {
+  }
+
+  // @include burger(right, top, transform);
 
   // &--is-open {
   // display: block;
+  // }
+
+  // @include respond-to(max-mobile) {
+  //   display: none;
+  // }
+  // }
+
+  // @include respond-to(only-tablet) {
+  //   background-color: transparent;
   // }
 }

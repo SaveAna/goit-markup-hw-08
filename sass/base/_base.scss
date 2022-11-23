@@ -6,6 +6,9 @@ body {
 
 .scroll-hidden {
   overflow: hidden;
+  .menu {
+    overflow-y: scroll;
+  }
 }
 
 h1,
