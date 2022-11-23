@@ -48,5 +48,20 @@
         border-radius: 2px;
       }
     }
+
+    &__link {
+      @include vertical-padding(32px, 32px);
+      @include base-transition(color);
+
+      &:focus,
+      &:hover {
+        color: getColor(accent);
+      }
+
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+    }
   }
 }

@@ -6,12 +6,13 @@
 
     &__item {
       position: relative;
-      color: getColor(accent);
     }
 
     &__link {
+      font-weight: 500;
       font-size: 18px;
       line-height: 1.22;
+      color: getColor(accent);
     }
 
     &__item:not(:first-child)::after {

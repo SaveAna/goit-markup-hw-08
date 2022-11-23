@@ -18,20 +18,9 @@
   }
 
   @include respond-to(tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
   }
-
-  // @include burger(right, top, transform);
-
-  // &--is-open {
-  // display: block;
-  // }
-
-  // @include respond-to(max-mobile) {
-  //   display: none;
-  // }
-  // }
-
-  // @include respond-to(only-tablet) {
-  //   background-color: transparent;
-  // }
 }

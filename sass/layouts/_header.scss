@@ -1,7 +1,6 @@
 // .header {
 //   border-bottom: 1px solid getBorderColor(header);
 //   &__container {
-//     @extend %desktop-container;
 
 //     display: flex;
 //     align-items: center;
@@ -20,35 +19,32 @@
 
 .header {
   border-bottom: 1px solid getBorderColor(header);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: inherit;
 
   &__container {
     display: flex;
     align-items: center;
   }
 
-  &__link {
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    color: inherit;
-  }
-
   @include respond-to(tablet) {
-    &__link {
-      @include base-transition(color);
+    // &__link {
+    //   @include base-transition(color);
 
-      &:focus,
-      &:hover {
-        color: getColor(accent);
-      }
+    //   &:focus,
+    //   &:hover {
+    //     color: getColor(accent);
+    //   }
 
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.02em;
-      @include vertical-padding(32px, 32px);
-    }
+    //   font-weight: 500;
+    //   font-size: 14px;
+    //   line-height: 1.14;
+    //   letter-spacing: 0.02em;
+    // }
   }
 
   @include respond-to(desktop) {
+    // @include vertical-padding(32px, 32px);
   }
 }
