@@ -150,21 +150,72 @@
           <h2 class="section-title">What we do</h2>
           <ul class="production__set">
             <li class="production__item">
-              <img src="./images/box1.jpg" alt="programer working in desk office" />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/production/desktop-apps-370.webp    370w,
+                    ./images/production/desktop-apps-370@2x.webp 740w
+                  "
+                  sizes="(min-width: 1200px) 370px, 100vw"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/production/desktop-apps-370.jpg    370w,
+                    ./images/production/desktop-apps-370@2x.jpg 740w
+                  "
+                  sizes="(min-width: 1200px) 370px, 100vw"
+                />
+                <img
+                  src="./images/production/desktop-apps-370.jpg"
+                  alt="programer working in desk office"
+                />
+              </picture>
               <h3 class="production__label">Desktop apps</h3>
             </li>
             <li class="production__item">
-              <img
-                src="./images/box2.jpg"
-                alt="designers are developing application smartphones team creators is working interface mobile phones"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/production/mobile-apps-370.webp    370w,
+                    ./images/production/mobile-apps-370@2x.webp 740w
+                  "
+                  sizes="(min-width: 1200px) 370px, 100vw"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/production/mobile-apps-370.jpg    370w,
+                    ./images/production/mobile-apps-370@2x.jpg 740w
+                  "
+                  sizes="(min-width: 1200px) 370px, 100vw"
+                />
+                <img src="./images/production/mobile-apps-370.jpg" alt="interface mobile phones" />
+              </picture>
               <h3 class="production__label">Mobile apps</h3>
             </li>
             <li class="production__item">
-              <img
-                src="./images/box3.jpg"
-                alt="artist web design with working colour selection graphic tablet"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/production/design-solutions-370.webp    370w,
+                    ./images/production/design-solutions-370@2x.webp 740w
+                  "
+                  sizes="(min-width: 1200px) 370px, 100vw"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/production/design-solutions-370.jpg    370w,
+                    ./images/production/design-solutions-370@2x.jpg 740w
+                  "
+                  sizes="(min-width: 1200px) 370px, 100vw"
+                />
+                <img src="./images/production/design-solutions-370.jpg" alt="web-design artist" />
+              </picture>
               <h3 class="production__label">Design solutions</h3>
             </li>
           </ul>
