@@ -1206,6 +1206,12 @@ button {
   outline: none;
 }
 
+@media screen and (min-width: 1200px) {
+  .checkbox:focus + .checkbox__icon {
+    outline: 2px solid #212121;
+    outline-offset: 2px;
+  }
+}
 .checkbox:checked + .checkbox__icon {
   background-color: #2196f3;
   border-color: transparent;

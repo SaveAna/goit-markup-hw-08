@@ -15,10 +15,13 @@
   }
 }
 
-// .checkbox:focus + .checkbox__icon {
-//   outline: 2px solid getColor(primary-black);
-//   outline-offset: 2px;
-// }
+@include respond-to(desktop) {
+  .checkbox:focus + .checkbox__icon {
+    outline: 2px solid getColor(primary-black);
+    outline-offset: 2px;
+  }
+}
+
 .checkbox:checked + .checkbox__icon {
   background-color: getColor(accent);
   border-color: transparent;
