@@ -45,7 +45,7 @@
 
   @include respond-to(desktop) {
     &__card {
-      flex-basis: calc(100% - 5 * getSize(grid-gap) / 6);
+      flex-basis: calc((100% - 5 * getSize(grid-gap)) / 6);
     }
 
     &__link:focus-visible {
