@@ -170,6 +170,7 @@
                 <img
                   src="./images/production/desktop-apps-370.jpg"
                   alt="programer working in desk office"
+                  loading="lazy"
                 />
               </picture>
               <h3 class="production__label">Desktop apps</h3>
@@ -192,7 +193,11 @@
                   "
                   sizes="(min-width: 1200px) 370px, 100vw"
                 />
-                <img src="./images/production/mobile-apps-370.jpg" alt="interface mobile phones" />
+                <img
+                  src="./images/production/mobile-apps-370.jpg"
+                  alt="interface mobile phones"
+                  loading="lazy"
+                />
               </picture>
               <h3 class="production__label">Mobile apps</h3>
             </li>
@@ -214,7 +219,11 @@
                   "
                   sizes="(min-width: 1200px) 370px, 100vw"
                 />
-                <img src="./images/production/design-solutions-370.jpg" alt="web-design artist" />
+                <img
+                  src="./images/production/design-solutions-370.jpg"
+                  alt="web-design artist"
+                  loading="lazy"
+                />
               </picture>
               <h3 class="production__label">Design solutions</h3>
             </li>
@@ -226,100 +235,103 @@
           <h2 class="section-title">Our Team</h2>
           <ul class="team__set">
             <li class="teammate">
-              <!-- <picture> -->
-              <!-- <source
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/team/mobile/walker-450.webp    450w,
+                    ./images/team/mobile/walker-450@2x.webp 900w
+                  "
+                  media="screen and (max-width: 767.99px)"
+                  sizes="450px, 100vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/team/tablet/walker-454.webp    454w,
+                    ./images/team/tablet/walker-454@2x.webp 908w
+                  "
+                  media="screen and (max-width: 1199.99px)"
+                  sizes="(min-width: 768px) 454px, 100vw"
+                />
+                <source
+                  type="image/webp"
                   srcset="
                     ./images/team/desktop/walker-270.webp    270w,
                     ./images/team/desktop/walker-270@2x.webp 540w
                   "
-                  type="image/webp"
-                  media="(min-width: 1200px) 270px, 25vw"
+                  media="screen and (min-width: 1200px)"
+                  sizes="270px, 100vw"
                 />
                 <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/team/mobile/walker-450.jpg    450w,
+                    ./images/team/mobile/walker-450@2x.jpg 900w
+                  "
+                  media="screen and (max-width: 767.99px)"
+                  sizes="450px, 100vw"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/team/tablet/walker-454.jpg    454w,
+                    ./images/team/tablet/walker-454@2x.jpg 908w
+                  "
+                  media="screen and (max-width: 1199.99px)"
+                  sizes="(min-width: 768px) 454px, 100vw"
+                />
+                <source
+                  type="image/jpeg"
                   srcset="
                     ./images/team/desktop/walker-270.jpg    270w,
                     ./images/team/desktop/walker-270@2x.jpg 540w
                   "
-                  type="image/jpeg"
-                  media="(min-width: 1200px) 270px, 25vw"
-                /> -->
-              <!-- ================== -->
-              <!-- <source
-                  srcset="
-                    ./images/team/tablet/walker-454.webp     454w,
-                    ./images/team/tablet/walker-454@2x.webp  908w
-                  "
-                  type="image/webp"
-                  media="(min-width: 1200px) 270px, 25vw"
+                  media="screen and (min-width: 1200px)"
+                  sizes="270px, 100vw"
                 />
+                <img
+                  src="./images/team/desktop/walker-270.jpg"
+                  alt="man with glasses"
+                  loading="lazy"
+                />
+              </picture>
+              <!-- <picture>
                 <source
-                  srcset="
-                    ./images/team/tablet/walker-454.jpg     454w,
-                    ./images/team/tablet/walker-454@2x.jpg  908w
-                  "
-                  type="image/jpeg"
-                  media="(min-width: 768px) 354px, 50vw"
-                /> -->
-              <!-- ====================== -->
-              <!-- <source
-                  srcset="
-                    ./images/team/mobile/walker-450.webp     450w,
-                    ./images/team/mobile/walker-450@2x.webp  900w
-                  "
                   type="image/webp"
-                  media="(min-width: 1200px) 270px, 25vw"
+                  srcset="
+                    
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 454px, (min-width: 480px) 450px, 100vw"
                 />
-                <source
-                  srcset="
-                    ./images/team/mobile/walker-450.jpg     450w,
-                    ./images/team/mobile/walker-450@2x.jpg  900w
-                  "
-                  type="image/jpeg"
-                  media="(min-width: 480px) 450px, 100vw"
-                /> -->
-              <!-- <source
-                  srcset="
-                    ./images/team/desktop/walker-270.webp    270w,
-                    ./images/team/desktop/walker-270@2x.webp 540w,
-                    ./images/team/tablet/walker-454.webp     454w,
-                    ./images/team/tablet/walker-454@2x.webp  908w,
-                    ./images/team/mobile/walker-450.webp     450w,
-                    ./images/team/mobile/walker-450@2x.webp  900w
-                  "
-                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                /> -->
-              <!-- <source
-                  srcset="
-                    ./images/team/desktop/walker-270.jpg    270w,
-                    ./images/team/desktop/walker-270@2x.jpg 540w,
-                    ./images/team/tablet/walker-454.jpg     454w,
-                    ./images/team/tablet/walker-454@2x.jpg  908w,
-                    ./images/team/mobile/walker-450.jpg     450w,
-                    ./images/team/mobile/walker-450@2x.jpg  900w
-                  "
-                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                />
-                <img src="./images/desktop/walker-270.jpg" alt="man with glasses" /> -->
-              <!-- </picture> -->
-
-              <!-- ////////////////////////////////// -->
+                <source -->
+              <!-- type="image/jpeg" -->
               <!-- <img
+                src="./images/team/desktop/walker-270.jpg"
+                alt="web-design artist"
+                loading="lazy"
                 srcset="
-                  ./images/team/desktop/walker-270.jpg    270w,
-                  ./images/team/desktop/walker-270@2x.jpg 540w,
-                  ./images/team/tablet/walker-454.jpg     454w,
-                  ./images/team/tablet/walker-454@2x.jpg  908w,
-                  ./images/team/mobile/walker-450.jpg     450w,
-                  ./images/team/mobile/walker-450@2x.jpg  900w
+                  ./images/team/desktop/walker-270.webp    270w,
+                  ./images/team/desktop/walker-270.jpg     270w,
+                  ./images/team/tablet/walker-454.webp     454w,
+                  ./images/team/tablet/walker-454.jpg      454w,
+                  ./images/team/mobile/walker-450.webp     450w,
+                  ./images/team/mobile/walker-450.jpg      450w,
+                  ./images/team/desktop/walker-270@2x.webp 540w,
+                  ./images/team/desktop/walker-270@2x.jpg  540w,
+                  ./images/team/tablet/walker-454@2x.webp  908w,
+                  ./images/team/tablet/walker-454@2x.jpg   908w,
+                  ./images/team/mobile/walker-450@2x.webp  900w,
+                  ./images/team/mobile/walker-450@2x.jpg   900w
                 "
-                sizes="
-              (min-width: 1200px) 270px, 
-              (min-width: 768px) 454px, 
-              (min-width: 480px) 450px, 100vw"
-                src="./images/desktop/walker-270.jpg"
-                alt="man with glasses"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 454px, (min-width: 480px) 450px, 100vw"
               /> -->
-              <!-- //////////////////////////////////////// -->
+              <!-- <img
+                src="./images/team/desktop/walker-270.jpg"
+                alt="web-design artist"
+                loading="lazy"
+              /> -->
+              <!-- </picture> -->
               <div class="teammate__info">
                 <h3 class="teammate__name">Christopher Walker</h3>
                 <p class="teammate__position">Product Designer</p>
@@ -372,8 +384,10 @@
               </div>
             </li>
             <li class="teammate">
+              <!-- =============================== -->
               <!-- <picture>
                 <source
+                type="image/webp"
                   srcset="
                     ./images/team/mobile/evans-450.webp     450w,
                     ./images/team/mobile/evans-450@2x.webp  900w,
@@ -384,6 +398,7 @@
                   "
                 />
                 <img
+                type="image/jpeg"
                   srcset="
                     ./images/team/mobile/evans-450.jpg     450w,
                     ./images/team/mobile/evans-450@2x.jpg  900w,
@@ -415,6 +430,67 @@
                 alt="woman with glasses"
               /> -->
               <!-- ///////////////////////////////// -->
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/team/mobile/evans-450.webp    450w,
+                    ./images/team/mobile/evans-450@2x.webp 900w
+                  "
+                  media="screen and (max-width: 767.99px)"
+                  sizes="450px, 100vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/team/tablet/evans-454.webp    454w,
+                    ./images/team/tablet/evans-454@2x.webp 908w
+                  "
+                  media="screen and (max-width: 1199.99px)"
+                  sizes="(min-width: 768px) 454px, 100vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/team/desktop/evans-270.webp    270w,
+                    ./images/team/desktop/evans-270@2x.webp 540w
+                  "
+                  media="screen and (min-width: 1200px)"
+                  sizes="270px, 100vw"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/team/mobile/evans-450.jpg    450w,
+                    ./images/team/mobile/evans-450@2x.jpg 900w
+                  "
+                  media="screen and (max-width: 767.99px)"
+                  sizes="450px, 100vw"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/team/tablet/evans-454.jpg    454w,
+                    ./images/team/tablet/evans-454@2x.jpg 908w
+                  "
+                  media="screen and (max-width: 1199.99px)"
+                  sizes="(min-width: 768px) 454px, 100vw"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/team/desktop/evans-270.jpg    270w,
+                    ./images/team/desktop/evans-270@2x.jpg 540w
+                  "
+                  media="screen and (min-width: 1200px)"
+                  sizes="270px, 100vw"
+                />
+                <img
+                  src="./images/team/desktop/evans-270.jpg"
+                  alt="woman with glasses"
+                  loading="lazy"
+                />
+              </picture>
               <div class="teammate__info">
                 <h3 class="teammate__name">Kylie Evans</h3>
                 <p class="teammate__position">Frontend Developer</p>
@@ -467,32 +543,63 @@
               </div>
             </li>
             <li class="teammate">
-              <!-- ///////////////////////////////// -->
-              <!-- <picture>
+              <picture>
                 <source
+                  type="image/webp"
                   srcset="
-                    ./images/team/mobile/harris-450.webp     450w,
-                    ./images/team/mobile/harris-450@2x.webp  900w,
-                    ./images/team/tablet/harris-454.webp     454w,
-                    ./images/team/tablet/harris-454@2x.webp  908w,
+                    ./images/team/mobile/harris-450.webp    450w,
+                    ./images/team/mobile/harris-450@2x.webp 900w
+                  "
+                  media="screen and (max-width: 767.99px)"
+                  sizes="450px, 100vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/team/tablet/harris-454.webp    454w,
+                    ./images/team/tablet/harris-454@2x.webp 908w
+                  "
+                  media="screen and (max-width: 1199.99px)"
+                  sizes="(min-width: 768px) 454px, 100vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
                     ./images/team/desktop/harris-270.webp    270w,
                     ./images/team/desktop/harris-270@2x.webp 540w
                   "
+                  media="screen and (min-width: 1200px)"
+                  sizes="270px, 100vw"
                 />
-                <img
+                <source
+                  type="image/jpeg"
                   srcset="
-                    ./images/team/mobile/harris-450.jpg     450w,
-                    ./images/team/mobile/harris-450@2x.jpg  900w,
-                    ./images/team/tablet/harris-454.jpg     454w,
-                    ./images/team/tablet/harris-454@2x.jpg  908w,
+                    ./images/team/mobile/harris-450.jpg    450w,
+                    ./images/team/mobile/harris-450@2x.jpg 900w
+                  "
+                  media="screen and (max-width: 767.99px)"
+                  sizes="450px, 100vw"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/team/tablet/harris-454.jpg    454w,
+                    ./images/team/tablet/harris-454@2x.jpg 908w
+                  "
+                  media="screen and (max-width: 1199.99px)"
+                  sizes="(min-width: 768px) 454px, 100vw"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
                     ./images/team/desktop/harris-270.jpg    270w,
                     ./images/team/desktop/harris-270@2x.jpg 540w
                   "
-                  src="./images/desktop/harris-270.jpg"
-                  alt="smiling man"
-                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                  media="screen and (min-width: 1200px)"
+                  sizes="270px, 100vw"
                 />
-              </picture> -->
+                <img src="./images/team/desktop/harris-270.jpg" alt="smiling man" loading="lazy" />
+              </picture>
               <div class="teammate__info">
                 <h3 class="teammate__name">Ryan Harris</h3>
                 <p class="teammate__position">Marketing</p>
@@ -545,31 +652,67 @@
               </div>
             </li>
             <li class="teammate">
-              <!-- <picture>
+              <picture>
                 <source
+                  type="image/webp"
                   srcset="
-                    ./images/team/mobile/moore-450.webp     450w,
-                    ./images/team/mobile/moore-450@2x.webp  900w,
-                    ./images/team/tablet/moore-454.webp     454w,
-                    ./images/team/tablet/moore-454@2x.webp  908w,
+                    ./images/team/mobile/moore-450.webp    450w,
+                    ./images/team/mobile/moore-450@2x.webp 900w
+                  "
+                  media="screen and (max-width: 767.99px)"
+                  sizes="450px, 100vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/team/tablet/moore-454.webp    454w,
+                    ./images/team/tablet/moore-454@2x.webp 908w
+                  "
+                  media="screen and (max-width: 1199.99px)"
+                  sizes="(min-width: 768px) 454px, 100vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
                     ./images/team/desktop/moore-270.webp    270w,
                     ./images/team/desktop/moore-270@2x.webp 540w
                   "
+                  media="screen and (min-width: 1200px)"
+                  sizes="270px, 100vw"
                 />
-                <img
+                <source
+                  type="image/jpeg"
                   srcset="
-                    ./images/team/mobile/moore-450.jpg     450w,
-                    ./images/team/mobile/moore-450@2x.jpg  900w,
-                    ./images/team/tablet/moore-454.jpg     454w,
-                    ./images/team/tablet/moore-454@2x.jpg  908w,
+                    ./images/team/mobile/moore-450.jpg    450w,
+                    ./images/team/mobile/moore-450@2x.jpg 900w
+                  "
+                  media="screen and (max-width: 767.99px)"
+                  sizes="450px, 100vw"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/team/tablet/moore-454.jpg    454w,
+                    ./images/team/tablet/moore-454@2x.jpg 908w
+                  "
+                  media="screen and (max-width: 1199.99px)"
+                  sizes="(min-width: 768px) 454px, 100vw"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
                     ./images/team/desktop/moore-270.jpg    270w,
                     ./images/team/desktop/moore-270@2x.jpg 540w
                   "
-                  src="./images/desktop/moore-270.jpg"
-                  alt="man with glasses"
-                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                  media="screen and (min-width: 1200px)"
+                  sizes="270px, 100vw"
                 />
-              </picture> -->
+                <img
+                  src="./images/team/desktop/moore-270.jpg"
+                  alt="man with glasses"
+                  loading="lazy"
+                />
+              </picture>
               <div class="teammate__info">
                 <h3 class="teammate__name">Tyler Moore</h3>
                 <p class="teammate__position">UI Designer</p>

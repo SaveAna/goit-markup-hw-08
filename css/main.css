@@ -285,7 +285,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .contacts {
-    gap: 50px;
+    gap: 40px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;

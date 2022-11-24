@@ -17,6 +17,7 @@
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
     if (!e.matches) return;
     refs.menu.classList.remove('menu--open');
+    refs.scroll.classList.remove('scroll-hidden');
     refs.toggleMenuBtn.classList.remove('burger-toggle--enabled');
     refs.toggleMenuBtn.setAttribute('aria-expanded', false);
   });

@@ -78,7 +78,7 @@
 
   @include respond-to(desktop) {
     // display: flex;
-    gap: 50px;
+    gap: 40px;
     flex-direction: row-reverse;
 
     &__item {
