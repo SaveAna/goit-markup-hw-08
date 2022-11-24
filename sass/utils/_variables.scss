@@ -115,7 +115,7 @@ $sizes: (
   'desktop-width': 1200px,
   // 'mobile-max': 575px,
   // 'tablet-max': 1199.99px,
-  // 'desktop-max': 1600px,,
+  // 'desktop-max': 1600px,,,
 );
 
 @function getSize($var) {
@@ -135,10 +135,10 @@ $breakpoints: (
     min-width: 1200px,
   ),
   'max-mobile': (
-    max-width: 767.99px,
+    max-width: 767px,
   ),
   'max-tablet': (
-    max-width: 1199.99px,
+    max-width: 1199px,
   ),
   'max-desctop': (
     max-width: 1600px,
