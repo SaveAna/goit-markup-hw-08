@@ -27,17 +27,36 @@
 
 .modal {
   position: absolute;
-  top: 93px;
   left: 50%;
-  height: 609px;
-  width: 450px;
   background-color: getColor(primary-white);
   box-shadow: getShadow(modal);
   border-radius: 4px;
   padding: 40px;
 
-  transform: translateX(-50%) scale(1);
   @include base-transition(transform);
+
+  @include respond-to(max-mobile) {
+    top: 93px;
+    height: 609px;
+    width: calc(100% - getSize(grid-gap));
+
+    transform: translateX(-50%) scale(1);
+  }
+
+  @include respond-to(tablet) {
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  @include respond-to(only-tablet) {
+    height: 609px;
+    width: 450px;
+  }
+
+  @include respond-to(desktop) {
+    height: 581px;
+    width: 528px;
+  }
 
   &__title {
     display: block;

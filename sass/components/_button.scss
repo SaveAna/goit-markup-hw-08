@@ -14,14 +14,19 @@
   background: getColor(accent);
   box-shadow: getShadow(button);
   border-radius: 4px;
-
-  @include respond-to(max-tablet) {
-    &--centered {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  &--centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
+
+  // @include respond-to(max-tablet) {
+  //   &--centered {
+  //     display: block;
+  //     margin-left: auto;
+  //     margin-right: auto;
+  //   }
+  // }
 }
 
 .subscribe-form__button {
