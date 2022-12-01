@@ -146,6 +146,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
 }
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -282,6 +283,14 @@ button {
             flex-direction: column-reverse;
     row-gap: 12px;
   }
+  .contacts__tel-icon {
+    width: 10px;
+    height: 14px;
+  }
+  .contacts__mail-icon {
+    width: 14px;
+    height: 10px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .contacts {
@@ -294,6 +303,14 @@ button {
   .contacts__item {
     padding-top: 32px;
     padding-bottom: 32px;
+  }
+  .contacts__tel-icon {
+    width: 10px;
+    height: 16px;
+  }
+  .contacts__mail-icon {
+    width: 16px;
+    height: 12px;
   }
 }
 

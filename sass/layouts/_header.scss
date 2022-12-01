@@ -1,22 +1,3 @@
-// .header {
-//   border-bottom: 1px solid getBorderColor(header);
-//   &__container {
-
-//     display: flex;
-//     align-items: center;
-//   }
-
-//   &__link {
-//     @extend %link-active;
-
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.02em;
-//     @include vertical-padding(32px, 32px);
-//   }
-// }
-
 .header {
   border-bottom: 1px solid getBorderColor(header);
   font-weight: 500;
@@ -26,25 +7,5 @@
   &__container {
     display: flex;
     align-items: center;
-  }
-
-  @include respond-to(tablet) {
-    // &__link {
-    //   @include base-transition(color);
-
-    //   &:focus,
-    //   &:hover {
-    //     color: getColor(accent);
-    //   }
-
-    //   font-weight: 500;
-    //   font-size: 14px;
-    //   line-height: 1.14;
-    //   letter-spacing: 0.02em;
-    // }
-  }
-
-  @include respond-to(desktop) {
-    // @include vertical-padding(32px, 32px);
   }
 }

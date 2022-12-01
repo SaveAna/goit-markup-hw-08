@@ -1,24 +1,4 @@
-// .contacts {
-//   display: flex;
-//   fill: currentColor;
-//   gap: 50px;
-
-//   &--append {
-//     margin-left: auto;
-//   }
-
-//   &__item {
-//     display: flex;
-//     align-items: center;
-//     gap: 10px;
-
-//     color: getColor(basic);
-//   }
-// }
-
 .contacts {
-  // font-weight: 500;
-  // letter-spacing: 0.02em;
   &__link {
     color: inherit;
   }
@@ -50,10 +30,6 @@
     display: flex;
     fill: currentColor;
 
-    // &--append {
-    //   margin-left: auto;
-    // }
-
     &__link {
       display: flex;
       align-items: center;
@@ -74,42 +50,34 @@
     line-height: 0.86;
     flex-direction: column-reverse;
     row-gap: 12px;
+
+    &__tel-icon {
+      width: 10px;
+      height: 14px;
+    }
+
+    &__mail-icon {
+      width: 14px;
+      height: 10px;
+    }
   }
 
   @include respond-to(desktop) {
-    // display: flex;
     gap: 40px;
     flex-direction: row-reverse;
 
     &__item {
       @include vertical-padding(32px, 32px);
     }
+
+    &__tel-icon {
+      width: 10px;
+      height: 16px;
+    }
+
+    &__mail-icon {
+      width: 16px;
+      height: 12px;
+    }
   }
 }
-
-// ============================
-// .contacts {
-//   font-weight: 500;
-//   letter-spacing: 0.02em;
-
-//   &__item {
-//     color: getColor(basic);
-//   }
-
-//   &__item:first-child {
-//     font-size: 34px;
-//     line-height: 40px;
-//     margin-bottom: 32px;
-//     @extend %accent;
-//   }
-
-//   &__item:last-child {
-//     font-size: 24px;
-//     line-height: 28px;
-//     color: getColor(form);
-//   }
-
-//   &--separated {
-//     margin-bottom: 64px;
-//   }
-// }
