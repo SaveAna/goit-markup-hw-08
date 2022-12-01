@@ -4,7 +4,11 @@
   }
 
   @include respond-to(max-mobile) {
-    &__icon {
+    &__tel-icon {
+      display: none;
+    }
+
+    &__mail-icon {
       display: none;
     }
 

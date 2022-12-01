@@ -232,7 +232,10 @@ button {
   color: inherit;
 }
 @media screen and (max-width: 767.8px) {
-  .contacts__icon {
+  .contacts__tel-icon {
+    display: none;
+  }
+  .contacts__mail-icon {
     display: none;
   }
   .contacts__item:first-child {
