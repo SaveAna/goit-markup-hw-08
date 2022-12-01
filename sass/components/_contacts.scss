@@ -31,6 +31,8 @@
   }
 
   @include respond-to(tablet) {
+    font-size: 12px;
+    line-height: 0.86;
     display: flex;
     fill: currentColor;
 
@@ -50,8 +52,6 @@
   }
 
   @include respond-to(only-tablet) {
-    font-size: 12px;
-    line-height: 0.86;
     flex-direction: column-reverse;
     row-gap: 12px;
 
